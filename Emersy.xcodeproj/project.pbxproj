@@ -107,6 +107,7 @@
 		EA6759B81DB235ED008F9963 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		EA6759BA1DB235ED008F9963 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA6759BC1DB235ED008F9963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA6759D31DB25775008F9963 /* Emersy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Emersy.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +169,7 @@
 		EA6759761DB235ED008F9963 /* Emersy */ = {
 			isa = PBXGroup;
 			children = (
+				EA6759D31DB25775008F9963 /* Emersy.entitlements */,
 				EA6759771DB235ED008F9963 /* AppDelegate.swift */,
 				EA6759791DB235ED008F9963 /* ViewController.swift */,
 				EA67597B1DB235ED008F9963 /* Main.storyboard */,
@@ -334,6 +336,14 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 4C34FT6ABU;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					EA6759871DB235ED008F9963 = {
 						CreatedOnToolsVersion = 8.0;
@@ -682,6 +692,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Emersy/Emersy.entitlements;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = Emersy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -695,6 +706,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Emersy/Emersy.entitlements;
 				DEVELOPMENT_TEAM = 4C34FT6ABU;
 				INFOPLIST_FILE = Emersy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -781,6 +793,7 @@
 				EA6759C11DB235ED008F9963 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA6759C31DB235ED008F9963 /* Build configuration list for PBXNativeTarget "Emersy WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -789,6 +802,7 @@
 				EA6759C51DB235ED008F9963 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA6759C71DB235ED008F9963 /* Build configuration list for PBXNativeTarget "Emersy" */ = {
 			isa = XCConfigurationList;
@@ -797,6 +811,7 @@
 				EA6759C91DB235ED008F9963 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA6759CA1DB235ED008F9963 /* Build configuration list for PBXNativeTarget "EmersyTests" */ = {
 			isa = XCConfigurationList;
@@ -805,6 +820,7 @@
 				EA6759CC1DB235ED008F9963 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA6759CD1DB235ED008F9963 /* Build configuration list for PBXNativeTarget "EmersyUITests" */ = {
 			isa = XCConfigurationList;
@@ -813,6 +829,7 @@
 				EA6759CF1DB235ED008F9963 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
