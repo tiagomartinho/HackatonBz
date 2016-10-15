@@ -1,6 +1,6 @@
 import UIKit
 
-class MissionViewController: UITableViewController {
+class MissionsViewController: UITableViewController {
 
     let missions = ["Mission 1", "Mission 2", "Mission 3"]
 
@@ -12,5 +12,9 @@ class MissionViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return missions.count
+    }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showMissionSegue", sender: self)
     }
 }

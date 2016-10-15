@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Mission View Controller-->
+        <!--Missions-->
         <scene sceneID="tcN-4b-SsK">
             <objects>
-                <tableViewController id="pgY-0h-7Zt" customClass="MissionViewController" customModule="Emersy" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="pgY-0h-7Zt" customClass="MissionsViewController" customModule="Emersy" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="6YH-xy-H9O">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,6 +22,9 @@
                                     <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="E69-Y0-2sn" kind="show" identifier="showMissionSegue" id="duE-3f-0c0"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -29,11 +32,39 @@
                             <outlet property="delegate" destination="pgY-0h-7Zt" id="5xW-fI-RjD"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="KwD-JI-dFR"/>
+                    <navigationItem key="navigationItem" title="Missions" id="KwD-JI-dFR"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J2R-TN-iyt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1548" y="139.880059970015"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="yXv-dC-5eY">
+            <objects>
+                <tableViewController id="E69-Y0-2sn" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="M1G-Pk-hUT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="jFg-E6-6pK">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jFg-E6-6pK" id="Y09-e6-ckI">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="E69-Y0-2sn" id="IWQ-KY-uNS"/>
+                            <outlet property="delegate" destination="E69-Y0-2sn" id="Xff-hM-jIA"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Whh-vk-4UK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2447" y="140"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GVU-F2-rzl">
