@@ -162,7 +162,7 @@
         <!--Pumps-->
         <scene sceneID="WCq-Tf-chD">
             <objects>
-                <viewController id="WLw-jm-fxS" sceneMemberID="viewController">
+                <viewController id="WLw-jm-fxS" customClass="PumpsViewController" customModule="Emersy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7Yh-xF-zeL"/>
                         <viewControllerLayoutGuide type="bottom" id="jin-wt-S88"/>
@@ -170,13 +170,22 @@
                     <view key="view" contentMode="scaleToFill" id="teN-QE-5Oa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Az8-jt-fIQ"/>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Az8-jt-fIQ" firstAttribute="top" secondItem="teN-QE-5Oa" secondAttribute="top" id="Hot-1R-ISE"/>
+                            <constraint firstItem="jin-wt-S88" firstAttribute="top" secondItem="Az8-jt-fIQ" secondAttribute="bottom" id="JH7-Qe-Rjr"/>
+                            <constraint firstAttribute="trailing" secondItem="Az8-jt-fIQ" secondAttribute="trailing" id="S40-1c-hkZ"/>
+                            <constraint firstItem="Az8-jt-fIQ" firstAttribute="leading" secondItem="teN-QE-5Oa" secondAttribute="leading" id="qv3-2k-zzW"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pumps" image="fire" id="x3G-y9-emu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eib-X4-eeN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="609" y="942"/>
+            <point key="canvasLocation" x="608.79999999999995" y="941.37931034482767"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="iPd-nf-IAh">

@@ -34,6 +34,8 @@
 		EAF53A351DB27201003CCC4C /* AlamofireMissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF53A341DB27201003CCC4C /* AlamofireMissionService.swift */; };
 		EAF53A371DB27B53003CCC4C /* MissionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF53A361DB27B53003CCC4C /* MissionDetailViewController.swift */; };
 		EAF53A391DB2818D003CCC4C /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF53A381DB2818D003CCC4C /* UsersTableViewController.swift */; };
+		EAF53A3E1DB29B7D003CCC4C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAF53A3D1DB29B7D003CCC4C /* MapKit.framework */; };
+		EAF53A411DB29BF1003CCC4C /* PumpsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF53A401DB29BF1003CCC4C /* PumpsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +134,8 @@
 		EAF53A341DB27201003CCC4C /* AlamofireMissionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireMissionService.swift; sourceTree = "<group>"; };
 		EAF53A361DB27B53003CCC4C /* MissionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionDetailViewController.swift; sourceTree = "<group>"; };
 		EAF53A381DB2818D003CCC4C /* UsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
+		EAF53A3D1DB29B7D003CCC4C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EAF53A401DB29BF1003CCC4C /* PumpsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PumpsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAF53A3E1DB29B7D003CCC4C /* MapKit.framework in Frameworks */,
 				01D8B7573AA651AC0F04FA04 /* Pods_Emersy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,6 +175,7 @@
 		9ED8BEDD265AC5134A31E743 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EAF53A3D1DB29B7D003CCC4C /* MapKit.framework */,
 				6200F65B35986465AC489AC5 /* Pods_Emersy.framework */,
 			);
 			name = Frameworks;
@@ -225,14 +231,10 @@
 		EA6759761DB235ED008F9963 /* Emersy */ = {
 			isa = PBXGroup;
 			children = (
-				EA6759771DB235ED008F9963 /* AppDelegate.swift */,
-				EAF53A311DB26F79003CCC4C /* Notification Handler */,
-				EA47A1C21DB2678800F1D89D /* MissionNotificationCategories.swift */,
-				EA47A1C41DB268EF00F1D89D /* Notification.swift */,
-				EA6759791DB235ED008F9963 /* MissionsViewController.swift */,
-				EAF53A361DB27B53003CCC4C /* MissionDetailViewController.swift */,
-				EAF53A381DB2818D003CCC4C /* UsersTableViewController.swift */,
 				EA67597B1DB235ED008F9963 /* Main.storyboard */,
+				EA6759771DB235ED008F9963 /* AppDelegate.swift */,
+				EAF53A311DB26F79003CCC4C /* Notifications */,
+				EAF53A3F1DB29BCE003CCC4C /* View Controllers */,
 				EA47A1C81DB26A8500F1D89D /* Supporting Files */,
 			);
 			path = Emersy;
@@ -288,16 +290,29 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EAF53A311DB26F79003CCC4C /* Notification Handler */ = {
+		EAF53A311DB26F79003CCC4C /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				EA47A1C21DB2678800F1D89D /* MissionNotificationCategories.swift */,
+				EA47A1C41DB268EF00F1D89D /* Notification.swift */,
 				EAF53A291DB26BF2003CCC4C /* NotificationHandler.swift */,
 				EAF53A2B1DB26F32003CCC4C /* NotificationHandlerBuilder.swift */,
 				EAF53A2D1DB26F4D003CCC4C /* RefuseNotificationHandler.swift */,
 				EAF53A2F1DB26F68003CCC4C /* AcceptNotificationHandler.swift */,
 				EAF53A341DB27201003CCC4C /* AlamofireMissionService.swift */,
 			);
-			name = "Notification Handler";
+			name = Notifications;
+			sourceTree = "<group>";
+		};
+		EAF53A3F1DB29BCE003CCC4C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EA6759791DB235ED008F9963 /* MissionsViewController.swift */,
+				EAF53A361DB27B53003CCC4C /* MissionDetailViewController.swift */,
+				EAF53A381DB2818D003CCC4C /* UsersTableViewController.swift */,
+				EAF53A401DB29BF1003CCC4C /* PumpsViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,6 +426,9 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
 								enabled = 1;
 							};
 							com.apple.Push = {
@@ -568,6 +586,7 @@
 				EAF53A371DB27B53003CCC4C /* MissionDetailViewController.swift in Sources */,
 				EAF53A2A1DB26BF2003CCC4C /* NotificationHandler.swift in Sources */,
 				EAF53A351DB27201003CCC4C /* AlamofireMissionService.swift in Sources */,
+				EAF53A411DB29BF1003CCC4C /* PumpsViewController.swift in Sources */,
 				EA67597A1DB235ED008F9963 /* MissionsViewController.swift in Sources */,
 				EA47A1C31DB2678800F1D89D /* MissionNotificationCategories.swift in Sources */,
 				EA47A1C71DB269B600F1D89D /* DeviceTokenData.swift in Sources */,
