@@ -2,6 +2,8 @@ import UIKit
 
 class MissionDetailViewController: UIViewController {
     @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var userActions: UIStackView!
+    @IBOutlet weak var userStatus: UILabel!
 
     var usersTableViewController: UsersTableViewController?
 
@@ -26,5 +28,18 @@ class MissionDetailViewController: UIViewController {
         default:
             break
         }
+    }
+
+    @IBAction func accept(_ sender: AnyObject) {
+        hidesUserActions()
+    }
+
+    @IBAction func refuse(_ sender: AnyObject) {
+        hidesUserActions()
+    }
+
+    func hidesUserActions() {
+        userActions.isHidden = true
+        userStatus.isHidden = false
     }
 }

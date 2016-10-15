@@ -60,9 +60,15 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6D-9P-y8B">
                                                         <state key="normal" title="👍 Accept"/>
+                                                        <connections>
+                                                            <action selector="accept:" destination="alM-ng-hVS" eventType="touchUpInside" id="hhH-SG-VOB"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8E-zY-ONz">
                                                         <state key="normal" title="👎 Refuse"/>
+                                                        <connections>
+                                                            <action selector="refuse:" destination="alM-ng-hVS" eventType="touchUpInside" id="NGw-8v-mWF"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -117,6 +123,8 @@
                     </view>
                     <connections>
                         <outlet property="containerView" destination="AZr-FW-xUG" id="Frv-iS-20k"/>
+                        <outlet property="userActions" destination="PwF-i2-pij" id="GwA-lU-yTY"/>
+                        <outlet property="userStatus" destination="lTL-5A-xgy" id="eV9-L3-vh3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="klB-b2-85R" userLabel="First Responder" sceneMemberID="firstResponder"/>
