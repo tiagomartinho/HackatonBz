@@ -13,6 +13,7 @@
 		EA2C36571DB2B71A001B03D5 /* pumpFinalTrack.json in Resources */ = {isa = PBXBuildFile; fileRef = EA2C36551DB2B71A001B03D5 /* pumpFinalTrack.json */; };
 		EA2C36581DB2B71A001B03D5 /* tubeTrack.json in Resources */ = {isa = PBXBuildFile; fileRef = EA2C36561DB2B71A001B03D5 /* tubeTrack.json */; };
 		EA2C365A1DB2B95F001B03D5 /* tubeTrackSimple.json in Resources */ = {isa = PBXBuildFile; fileRef = EA2C36591DB2B95F001B03D5 /* tubeTrackSimple.json */; };
+		EA2C365C1DB2C039001B03D5 /* PumpsServiceInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2C365B1DB2C039001B03D5 /* PumpsServiceInput.swift */; };
 		EA47A1C31DB2678800F1D89D /* MissionNotificationCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA47A1C21DB2678800F1D89D /* MissionNotificationCategories.swift */; };
 		EA47A1C51DB268EF00F1D89D /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA47A1C41DB268EF00F1D89D /* Notification.swift */; };
 		EA47A1C71DB269B600F1D89D /* DeviceTokenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA47A1C61DB269B600F1D89D /* DeviceTokenData.swift */; };
@@ -108,6 +109,7 @@
 		EA2C36551DB2B71A001B03D5 /* pumpFinalTrack.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pumpFinalTrack.json; sourceTree = "<group>"; };
 		EA2C36561DB2B71A001B03D5 /* tubeTrack.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tubeTrack.json; sourceTree = "<group>"; };
 		EA2C36591DB2B95F001B03D5 /* tubeTrackSimple.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tubeTrackSimple.json; sourceTree = "<group>"; };
+		EA2C365B1DB2C039001B03D5 /* PumpsServiceInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PumpsServiceInput.swift; sourceTree = "<group>"; };
 		EA47A1C21DB2678800F1D89D /* MissionNotificationCategories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionNotificationCategories.swift; sourceTree = "<group>"; };
 		EA47A1C41DB268EF00F1D89D /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		EA47A1C61DB269B600F1D89D /* DeviceTokenData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceTokenData.swift; sourceTree = "<group>"; };
@@ -326,6 +328,7 @@
 				EAF53A401DB29BF1003CCC4C /* PumpsViewController.swift */,
 				EA2C36511DB2A46C001B03D5 /* ViewController+CLLocationManagerDelegate.swift */,
 				EA2C36531DB2B1AE001B03D5 /* PumpsService.swift */,
+				EA2C365B1DB2C039001B03D5 /* PumpsServiceInput.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -605,6 +608,7 @@
 				EAF53A371DB27B53003CCC4C /* MissionDetailViewController.swift in Sources */,
 				EAF53A2A1DB26BF2003CCC4C /* NotificationHandler.swift in Sources */,
 				EAF53A351DB27201003CCC4C /* AlamofireMissionService.swift in Sources */,
+				EA2C365C1DB2C039001B03D5 /* PumpsServiceInput.swift in Sources */,
 				EAF53A411DB29BF1003CCC4C /* PumpsViewController.swift in Sources */,
 				EA67597A1DB235ED008F9963 /* MissionsViewController.swift in Sources */,
 				EA47A1C31DB2678800F1D89D /* MissionNotificationCategories.swift in Sources */,
