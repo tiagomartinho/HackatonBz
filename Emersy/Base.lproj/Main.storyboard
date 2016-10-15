@@ -198,6 +198,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mf-i5-3T6">
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <state key="normal" title="Calculate"/>
+                                                        <connections>
+                                                            <action selector="calculate:" destination="WLw-jm-fxS" eventType="touchUpInside" id="CRY-is-TiQ"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>

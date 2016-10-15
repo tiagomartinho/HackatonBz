@@ -11,6 +11,9 @@ class PumpsViewController: UIViewController, MKMapViewDelegate {
     var location: CLLocation?
     var mapZoomSet = false
 
+    var pa: String?
+    var flowRate: String?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         getUserPosition()
@@ -25,10 +28,43 @@ class PumpsViewController: UIViewController, MKMapViewDelegate {
             annotation.coordinate = newCoordinates
             mapView.addAnnotation(annotation)
             annotations.append(annotation)
+            if annotations.count == 1 {
+                askHydrantInformation()
+            }
         }
     }
 
+    func askHydrantInformation() {
+        let alert = UIAlertController(title: "Hydrant Information", message: "Please insert the following info", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: { (action) in
+            self.undo()
+        }))
+        alert.addAction(UIAlertAction(title: "Save", style: .default, handler: { (action) in
+            let pa = alert.textFields?.first?.text ?? ""
+            let flowRate = alert.textFields?.last?.text ?? ""
+            if pa.isEmpty || flowRate.isEmpty {
+                self.askHydrantInformation()
+            } else {
+                self.pa = pa
+                self.flowRate = flowRate
+            }
+        }))
+        alert.addTextField { (textField) in
+            textField.placeholder = "Pa"
+            textField.keyboardType = .numbersAndPunctuation
+        }
+        alert.addTextField { (textField) in
+            textField.placeholder = "Flow Rate"
+            textField.keyboardType = .numbersAndPunctuation
+        }
+        present(alert, animated: true, completion: nil)
+    }
+
     @IBAction func undo(_ sender: UIButton) {
+        undo()
+    }
+
+    func undo() {
         if let last = annotations.last {
             mapView.removeAnnotation(last)
             annotations.removeLast()
@@ -50,5 +86,10 @@ class PumpsViewController: UIViewController, MKMapViewDelegate {
             annotationView.pinTintColor = #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)
         }
         return annotationView
+    }
+
+    @IBAction func calculate(_ sender: UIButton) {
+        let fire = annotations.remove(at: 1)
+        annotations.append(fire)
     }
 }

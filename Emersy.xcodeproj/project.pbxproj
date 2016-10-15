@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		01D8B7573AA651AC0F04FA04 /* Pods_Emersy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6200F65B35986465AC489AC5 /* Pods_Emersy.framework */; };
 		EA2C36521DB2A46C001B03D5 /* ViewController+CLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2C36511DB2A46C001B03D5 /* ViewController+CLLocationManagerDelegate.swift */; };
+		EA2C36541DB2B1AE001B03D5 /* PumpsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2C36531DB2B1AE001B03D5 /* PumpsService.swift */; };
 		EA47A1C31DB2678800F1D89D /* MissionNotificationCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA47A1C21DB2678800F1D89D /* MissionNotificationCategories.swift */; };
 		EA47A1C51DB268EF00F1D89D /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA47A1C41DB268EF00F1D89D /* Notification.swift */; };
 		EA47A1C71DB269B600F1D89D /* DeviceTokenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA47A1C61DB269B600F1D89D /* DeviceTokenData.swift */; };
@@ -100,6 +101,7 @@
 		6200F65B35986465AC489AC5 /* Pods_Emersy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emersy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7083C3E0C85C60C746DFC7B /* Pods-Emersy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emersy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Emersy/Pods-Emersy.release.xcconfig"; sourceTree = "<group>"; };
 		EA2C36511DB2A46C001B03D5 /* ViewController+CLLocationManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+CLLocationManagerDelegate.swift"; sourceTree = "<group>"; };
+		EA2C36531DB2B1AE001B03D5 /* PumpsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PumpsService.swift; sourceTree = "<group>"; };
 		EA47A1C21DB2678800F1D89D /* MissionNotificationCategories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionNotificationCategories.swift; sourceTree = "<group>"; };
 		EA47A1C41DB268EF00F1D89D /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		EA47A1C61DB269B600F1D89D /* DeviceTokenData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceTokenData.swift; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 				EAF53A381DB2818D003CCC4C /* UsersTableViewController.swift */,
 				EAF53A401DB29BF1003CCC4C /* PumpsViewController.swift */,
 				EA2C36511DB2A46C001B03D5 /* ViewController+CLLocationManagerDelegate.swift */,
+				EA2C36531DB2B1AE001B03D5 /* PumpsService.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -582,6 +585,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA2C36541DB2B1AE001B03D5 /* PumpsService.swift in Sources */,
 				EA47A1C51DB268EF00F1D89D /* Notification.swift in Sources */,
 				EAF53A301DB26F68003CCC4C /* AcceptNotificationHandler.swift in Sources */,
 				EAF53A391DB2818D003CCC4C /* UsersTableViewController.swift in Sources */,
