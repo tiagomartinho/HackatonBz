@@ -49,6 +49,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
                                          didReceive response: UNNotificationResponse,
                                          withCompletionHandler completionHandler: @escaping () -> Void) {
         print("userNotificationCenter")
+        if response.actionIdentifier == "ACCEPT" {
+            print("ACCEPT")
+        } else {
+            print("REFUSE")
+        }
         completionHandler()
     }
 }
