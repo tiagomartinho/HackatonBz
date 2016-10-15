@@ -9,22 +9,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions
         launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        requestAndRegisterForNotifications(application)
+        requestAndRegisterForNotifications(application: application, delegate: self)
         return true
     }
 
-    func requestAndRegisterForNotifications(_ application: UIApplication) {
-        requestNotificationsAuthorization()
+    func requestAndRegisterForNotifications(application: UIApplication, delegate: UNUserNotificationCenterDelegate) {
+        requestNotificationsAuthorization(delegate: delegate)
         application.registerForRemoteNotifications()
     }
 
-    func requestNotificationsAuthorization() {
+    func requestNotificationsAuthorization(delegate: UNUserNotificationCenterDelegate) {
         let center = UNUserNotificationCenter.current()
         center.requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
             print("requestNotificationsAuthorizationGranted? \(granted)")
         }
         center.setNotificationCategories(MissionNotificationCategories.get())
-        center.delegate = self
+        center.delegate = delegate
     }
 
     func application(_ application: UIApplication,
