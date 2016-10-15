@@ -218,9 +218,16 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pumps" image="fire" id="x3G-y9-emu"/>
+                    <connections>
+                        <outlet property="mapView" destination="Az8-jt-fIQ" id="jdf-ek-PXJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eib-X4-eeN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="lM6-vY-ek3"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="lM6-vY-ek3">
+                    <connections>
+                        <action selector="longPressGesture:" destination="WLw-jm-fxS" id="qqb-oO-3vZ"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="608.79999999999995" y="941.37931034482767"/>
         </scene>
@@ -234,8 +241,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Ghq-S3-l3l" kind="relationship" relationship="viewControllers" id="n9E-Ps-33h"/>
                         <segue destination="WLw-jm-fxS" kind="relationship" relationship="viewControllers" id="HNl-ep-IRo"/>
+                        <segue destination="Ghq-S3-l3l" kind="relationship" relationship="viewControllers" id="n9E-Ps-33h"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6GS-mF-am9" userLabel="First Responder" sceneMemberID="firstResponder"/>
