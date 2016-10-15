@@ -33,6 +33,7 @@
 		EAF53A301DB26F68003CCC4C /* AcceptNotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF53A2F1DB26F68003CCC4C /* AcceptNotificationHandler.swift */; };
 		EAF53A351DB27201003CCC4C /* AlamofireMissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF53A341DB27201003CCC4C /* AlamofireMissionService.swift */; };
 		EAF53A371DB27B53003CCC4C /* MissionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF53A361DB27B53003CCC4C /* MissionDetailViewController.swift */; };
+		EAF53A391DB2818D003CCC4C /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF53A381DB2818D003CCC4C /* UsersTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +131,7 @@
 		EAF53A2F1DB26F68003CCC4C /* AcceptNotificationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcceptNotificationHandler.swift; sourceTree = "<group>"; };
 		EAF53A341DB27201003CCC4C /* AlamofireMissionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireMissionService.swift; sourceTree = "<group>"; };
 		EAF53A361DB27B53003CCC4C /* MissionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionDetailViewController.swift; sourceTree = "<group>"; };
+		EAF53A381DB2818D003CCC4C /* UsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +231,7 @@
 				EA47A1C41DB268EF00F1D89D /* Notification.swift */,
 				EA6759791DB235ED008F9963 /* MissionsViewController.swift */,
 				EAF53A361DB27B53003CCC4C /* MissionDetailViewController.swift */,
+				EAF53A381DB2818D003CCC4C /* UsersTableViewController.swift */,
 				EA67597B1DB235ED008F9963 /* Main.storyboard */,
 				EA47A1C81DB26A8500F1D89D /* Supporting Files */,
 			);
@@ -560,6 +563,7 @@
 			files = (
 				EA47A1C51DB268EF00F1D89D /* Notification.swift in Sources */,
 				EAF53A301DB26F68003CCC4C /* AcceptNotificationHandler.swift in Sources */,
+				EAF53A391DB2818D003CCC4C /* UsersTableViewController.swift in Sources */,
 				EAF53A2E1DB26F4D003CCC4C /* RefuseNotificationHandler.swift in Sources */,
 				EAF53A371DB27B53003CCC4C /* MissionDetailViewController.swift in Sources */,
 				EAF53A2A1DB26BF2003CCC4C /* NotificationHandler.swift in Sources */,

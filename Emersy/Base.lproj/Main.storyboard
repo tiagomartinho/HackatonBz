@@ -36,10 +36,59 @@
             <point key="canvasLocation" x="1548" y="139.880059970015"/>
         </scene>
         <!--Mission Detail View Controller-->
+        <scene sceneID="Jeg-lu-zOD">
+            <objects>
+                <viewController storyboardIdentifier="MissionDetailViewController" id="alM-ng-hVS" customClass="MissionDetailViewController" customModule="Emersy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WYj-Bx-sfD"/>
+                        <viewControllerLayoutGuide type="bottom" id="6lR-ws-STD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NSj-by-dbm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VeM-cb-Phb">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You accepted this mission" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTL-5A-xgy">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KbE-yU-eDW">
+                                        <segments>
+                                            <segment title="Accepted"/>
+                                            <segment title="Refused"/>
+                                            <segment title="Unknown"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="usersStatesChanged:" destination="alM-ng-hVS" eventType="valueChanged" id="WU5-Ve-IsR"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AZr-FW-xUG"/>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VeM-cb-Phb" firstAttribute="top" secondItem="WYj-Bx-sfD" secondAttribute="bottom" constant="20" id="JJD-6T-F3H"/>
+                            <constraint firstItem="VeM-cb-Phb" firstAttribute="leading" secondItem="NSj-by-dbm" secondAttribute="leading" id="SIZ-fX-n09"/>
+                            <constraint firstAttribute="trailing" secondItem="VeM-cb-Phb" secondAttribute="trailing" id="TIp-91-3EJ"/>
+                            <constraint firstItem="6lR-ws-STD" firstAttribute="top" secondItem="VeM-cb-Phb" secondAttribute="bottom" constant="8" symbolic="YES" id="ebl-zV-Xjg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="AZr-FW-xUG" id="Frv-iS-20k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="klB-b2-85R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2292" y="140"/>
+        </scene>
+        <!--Users Table View Controller-->
         <scene sceneID="yXv-dC-5eY">
             <objects>
-                <tableViewController storyboardIdentifier="MissionDetailViewController" id="E69-Y0-2sn" customClass="MissionDetailViewController" customModule="Emersy" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="M1G-Pk-hUT">
+                <tableViewController storyboardIdentifier="UsersTableViewController" id="E69-Y0-2sn" customClass="UsersTableViewController" customModule="Emersy" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="M1G-Pk-hUT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -61,7 +110,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Whh-vk-4UK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2447" y="140"/>
+            <point key="canvasLocation" x="3122" y="140"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GVU-F2-rzl">
