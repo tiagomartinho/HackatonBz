@@ -1,13 +1,27 @@
-import Alamofire
-import SwiftyJSON
+protocol NotificationHandler {
+    func handle(withCompletionHandler completionHandler: @escaping () -> Void)
+}
 
-class NotificationHandler {
-    func handle(with identifier: String, withCompletionHandler completionHandler: @escaping () -> Void) {
-        if identifier == "ACCEPT" {
-            print("ACCEPT")
-        } else {
-            print("REFUSE")
-        }
+class AcceptNotificationHandler: NotificationHandler {
+    func handle(withCompletionHandler completionHandler: @escaping () -> Void) {
+        print("ACCEPT")
         completionHandler()
+    }
+}
+
+class RefuseNotificationHandler: NotificationHandler {
+    func handle(withCompletionHandler completionHandler: @escaping () -> Void) {
+        print("REFUSE")
+        completionHandler()
+    }
+}
+
+class NotificationHandlerBuilder {
+    static func build(with identifier: String) -> NotificationHandler {
+        if identifier == "ACCEPT" {
+            return AcceptNotificationHandler()
+        } else {
+            return RefuseNotificationHandler()
+        }
     }
 }
