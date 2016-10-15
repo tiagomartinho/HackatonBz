@@ -38,10 +38,10 @@
             </objects>
             <point key="canvasLocation" x="1548" y="139.880059970015"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Mission Detail View Controller-->
         <scene sceneID="yXv-dC-5eY">
             <objects>
-                <tableViewController id="E69-Y0-2sn" sceneMemberID="viewController">
+                <tableViewController id="E69-Y0-2sn" customClass="MissionDetailViewController" customModule="Emersy" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="M1G-Pk-hUT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
