@@ -15,11 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 
     func application(_ application: UIApplication,
                      didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        var token = ""
-        for i in 0..<deviceToken.count {
-            token += String(format: "%02.2hhx", deviceToken[i] as CVarArg)
-        }
-        print("deviceToken: \(token)")
+        print("deviceToken: \(deviceToken.string())")
     }
 
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
