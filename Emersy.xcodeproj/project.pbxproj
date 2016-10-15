@@ -1,0 +1,820 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA6759781DB235ED008F9963 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6759771DB235ED008F9963 /* AppDelegate.swift */; };
+		EA67597A1DB235ED008F9963 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6759791DB235ED008F9963 /* ViewController.swift */; };
+		EA67597D1DB235ED008F9963 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA67597B1DB235ED008F9963 /* Main.storyboard */; };
+		EA67597F1DB235ED008F9963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA67597E1DB235ED008F9963 /* Assets.xcassets */; };
+		EA6759821DB235ED008F9963 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6759801DB235ED008F9963 /* LaunchScreen.storyboard */; };
+		EA67598D1DB235ED008F9963 /* EmersyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA67598C1DB235ED008F9963 /* EmersyTests.swift */; };
+		EA6759981DB235ED008F9963 /* EmersyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6759971DB235ED008F9963 /* EmersyUITests.swift */; };
+		EA67599D1DB235ED008F9963 /* Emersy WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EA67599C1DB235ED008F9963 /* Emersy WatchKit App.app */; };
+		EA6759A31DB235ED008F9963 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6759A11DB235ED008F9963 /* Interface.storyboard */; };
+		EA6759A51DB235ED008F9963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA6759A41DB235ED008F9963 /* Assets.xcassets */; };
+		EA6759AC1DB235ED008F9963 /* Emersy WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EA6759AB1DB235ED008F9963 /* Emersy WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EA6759B31DB235ED008F9963 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6759B21DB235ED008F9963 /* InterfaceController.swift */; };
+		EA6759B51DB235ED008F9963 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6759B41DB235ED008F9963 /* ExtensionDelegate.swift */; };
+		EA6759B71DB235ED008F9963 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6759B61DB235ED008F9963 /* NotificationController.swift */; };
+		EA6759B91DB235ED008F9963 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6759B81DB235ED008F9963 /* ComplicationController.swift */; };
+		EA6759BB1DB235ED008F9963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA6759BA1DB235ED008F9963 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA6759891DB235ED008F9963 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA67596C1DB235ED008F9963 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA6759731DB235ED008F9963;
+			remoteInfo = Emersy;
+		};
+		EA6759941DB235ED008F9963 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA67596C1DB235ED008F9963 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA6759731DB235ED008F9963;
+			remoteInfo = Emersy;
+		};
+		EA67599E1DB235ED008F9963 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA67596C1DB235ED008F9963 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA67599B1DB235ED008F9963;
+			remoteInfo = "Emersy WatchKit App";
+		};
+		EA6759AD1DB235ED008F9963 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA67596C1DB235ED008F9963 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA6759AA1DB235ED008F9963;
+			remoteInfo = "Emersy WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EA6759C21DB235ED008F9963 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EA6759AC1DB235ED008F9963 /* Emersy WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6759C61DB235ED008F9963 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EA67599D1DB235ED008F9963 /* Emersy WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EA6759741DB235ED008F9963 /* Emersy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emersy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA6759771DB235ED008F9963 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA6759791DB235ED008F9963 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA67597C1DB235ED008F9963 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA67597E1DB235ED008F9963 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA6759811DB235ED008F9963 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA6759831DB235ED008F9963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA6759881DB235ED008F9963 /* EmersyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmersyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA67598C1DB235ED008F9963 /* EmersyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmersyTests.swift; sourceTree = "<group>"; };
+		EA67598E1DB235ED008F9963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA6759931DB235ED008F9963 /* EmersyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmersyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA6759971DB235ED008F9963 /* EmersyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmersyUITests.swift; sourceTree = "<group>"; };
+		EA6759991DB235ED008F9963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA67599C1DB235ED008F9963 /* Emersy WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emersy WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA6759A21DB235ED008F9963 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		EA6759A41DB235ED008F9963 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA6759A61DB235ED008F9963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA6759AB1DB235ED008F9963 /* Emersy WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Emersy WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA6759B11DB235ED008F9963 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		EA6759B21DB235ED008F9963 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		EA6759B41DB235ED008F9963 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		EA6759B61DB235ED008F9963 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		EA6759B81DB235ED008F9963 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		EA6759BA1DB235ED008F9963 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA6759BC1DB235ED008F9963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA6759711DB235ED008F9963 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6759851DB235ED008F9963 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6759901DB235ED008F9963 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6759A81DB235ED008F9963 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA67596B1DB235ED008F9963 = {
+			isa = PBXGroup;
+			children = (
+				EA6759761DB235ED008F9963 /* Emersy */,
+				EA67598B1DB235ED008F9963 /* EmersyTests */,
+				EA6759961DB235ED008F9963 /* EmersyUITests */,
+				EA6759A01DB235ED008F9963 /* Emersy WatchKit App */,
+				EA6759AF1DB235ED008F9963 /* Emersy WatchKit Extension */,
+				EA6759751DB235ED008F9963 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA6759751DB235ED008F9963 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA6759741DB235ED008F9963 /* Emersy.app */,
+				EA6759881DB235ED008F9963 /* EmersyTests.xctest */,
+				EA6759931DB235ED008F9963 /* EmersyUITests.xctest */,
+				EA67599C1DB235ED008F9963 /* Emersy WatchKit App.app */,
+				EA6759AB1DB235ED008F9963 /* Emersy WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA6759761DB235ED008F9963 /* Emersy */ = {
+			isa = PBXGroup;
+			children = (
+				EA6759771DB235ED008F9963 /* AppDelegate.swift */,
+				EA6759791DB235ED008F9963 /* ViewController.swift */,
+				EA67597B1DB235ED008F9963 /* Main.storyboard */,
+				EA67597E1DB235ED008F9963 /* Assets.xcassets */,
+				EA6759801DB235ED008F9963 /* LaunchScreen.storyboard */,
+				EA6759831DB235ED008F9963 /* Info.plist */,
+			);
+			path = Emersy;
+			sourceTree = "<group>";
+		};
+		EA67598B1DB235ED008F9963 /* EmersyTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA67598C1DB235ED008F9963 /* EmersyTests.swift */,
+				EA67598E1DB235ED008F9963 /* Info.plist */,
+			);
+			path = EmersyTests;
+			sourceTree = "<group>";
+		};
+		EA6759961DB235ED008F9963 /* EmersyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EA6759971DB235ED008F9963 /* EmersyUITests.swift */,
+				EA6759991DB235ED008F9963 /* Info.plist */,
+			);
+			path = EmersyUITests;
+			sourceTree = "<group>";
+		};
+		EA6759A01DB235ED008F9963 /* Emersy WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				EA6759A11DB235ED008F9963 /* Interface.storyboard */,
+				EA6759A41DB235ED008F9963 /* Assets.xcassets */,
+				EA6759A61DB235ED008F9963 /* Info.plist */,
+			);
+			path = "Emersy WatchKit App";
+			sourceTree = "<group>";
+		};
+		EA6759AF1DB235ED008F9963 /* Emersy WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EA6759B21DB235ED008F9963 /* InterfaceController.swift */,
+				EA6759B41DB235ED008F9963 /* ExtensionDelegate.swift */,
+				EA6759B61DB235ED008F9963 /* NotificationController.swift */,
+				EA6759B81DB235ED008F9963 /* ComplicationController.swift */,
+				EA6759BA1DB235ED008F9963 /* Assets.xcassets */,
+				EA6759BC1DB235ED008F9963 /* Info.plist */,
+				EA6759B01DB235ED008F9963 /* Supporting Files */,
+			);
+			path = "Emersy WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		EA6759B01DB235ED008F9963 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA6759B11DB235ED008F9963 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA6759731DB235ED008F9963 /* Emersy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA6759C71DB235ED008F9963 /* Build configuration list for PBXNativeTarget "Emersy" */;
+			buildPhases = (
+				EA6759701DB235ED008F9963 /* Sources */,
+				EA6759711DB235ED008F9963 /* Frameworks */,
+				EA6759721DB235ED008F9963 /* Resources */,
+				EA6759C61DB235ED008F9963 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA67599F1DB235ED008F9963 /* PBXTargetDependency */,
+			);
+			name = Emersy;
+			productName = Emersy;
+			productReference = EA6759741DB235ED008F9963 /* Emersy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA6759871DB235ED008F9963 /* EmersyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA6759CA1DB235ED008F9963 /* Build configuration list for PBXNativeTarget "EmersyTests" */;
+			buildPhases = (
+				EA6759841DB235ED008F9963 /* Sources */,
+				EA6759851DB235ED008F9963 /* Frameworks */,
+				EA6759861DB235ED008F9963 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA67598A1DB235ED008F9963 /* PBXTargetDependency */,
+			);
+			name = EmersyTests;
+			productName = EmersyTests;
+			productReference = EA6759881DB235ED008F9963 /* EmersyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EA6759921DB235ED008F9963 /* EmersyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA6759CD1DB235ED008F9963 /* Build configuration list for PBXNativeTarget "EmersyUITests" */;
+			buildPhases = (
+				EA67598F1DB235ED008F9963 /* Sources */,
+				EA6759901DB235ED008F9963 /* Frameworks */,
+				EA6759911DB235ED008F9963 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA6759951DB235ED008F9963 /* PBXTargetDependency */,
+			);
+			name = EmersyUITests;
+			productName = EmersyUITests;
+			productReference = EA6759931DB235ED008F9963 /* EmersyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		EA67599B1DB235ED008F9963 /* Emersy WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA6759C31DB235ED008F9963 /* Build configuration list for PBXNativeTarget "Emersy WatchKit App" */;
+			buildPhases = (
+				EA67599A1DB235ED008F9963 /* Resources */,
+				EA6759C21DB235ED008F9963 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA6759AE1DB235ED008F9963 /* PBXTargetDependency */,
+			);
+			name = "Emersy WatchKit App";
+			productName = "Emersy WatchKit App";
+			productReference = EA67599C1DB235ED008F9963 /* Emersy WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		EA6759AA1DB235ED008F9963 /* Emersy WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA6759BF1DB235ED008F9963 /* Build configuration list for PBXNativeTarget "Emersy WatchKit Extension" */;
+			buildPhases = (
+				EA6759A71DB235ED008F9963 /* Sources */,
+				EA6759A81DB235ED008F9963 /* Frameworks */,
+				EA6759A91DB235ED008F9963 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Emersy WatchKit Extension";
+			productName = "Emersy WatchKit Extension";
+			productReference = EA6759AB1DB235ED008F9963 /* Emersy WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA67596C1DB235ED008F9963 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = tm;
+				TargetAttributes = {
+					EA6759731DB235ED008F9963 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4C34FT6ABU;
+						ProvisioningStyle = Automatic;
+					};
+					EA6759871DB235ED008F9963 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4C34FT6ABU;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EA6759731DB235ED008F9963;
+					};
+					EA6759921DB235ED008F9963 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4C34FT6ABU;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EA6759731DB235ED008F9963;
+					};
+					EA67599B1DB235ED008F9963 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4C34FT6ABU;
+						ProvisioningStyle = Automatic;
+					};
+					EA6759AA1DB235ED008F9963 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4C34FT6ABU;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EA67596F1DB235ED008F9963 /* Build configuration list for PBXProject "Emersy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA67596B1DB235ED008F9963;
+			productRefGroup = EA6759751DB235ED008F9963 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA6759731DB235ED008F9963 /* Emersy */,
+				EA6759871DB235ED008F9963 /* EmersyTests */,
+				EA6759921DB235ED008F9963 /* EmersyUITests */,
+				EA67599B1DB235ED008F9963 /* Emersy WatchKit App */,
+				EA6759AA1DB235ED008F9963 /* Emersy WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA6759721DB235ED008F9963 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA6759821DB235ED008F9963 /* LaunchScreen.storyboard in Resources */,
+				EA67597F1DB235ED008F9963 /* Assets.xcassets in Resources */,
+				EA67597D1DB235ED008F9963 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6759861DB235ED008F9963 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6759911DB235ED008F9963 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA67599A1DB235ED008F9963 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA6759A51DB235ED008F9963 /* Assets.xcassets in Resources */,
+				EA6759A31DB235ED008F9963 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6759A91DB235ED008F9963 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA6759BB1DB235ED008F9963 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA6759701DB235ED008F9963 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA67597A1DB235ED008F9963 /* ViewController.swift in Sources */,
+				EA6759781DB235ED008F9963 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6759841DB235ED008F9963 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA67598D1DB235ED008F9963 /* EmersyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA67598F1DB235ED008F9963 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA6759981DB235ED008F9963 /* EmersyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6759A71DB235ED008F9963 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA6759B71DB235ED008F9963 /* NotificationController.swift in Sources */,
+				EA6759B91DB235ED008F9963 /* ComplicationController.swift in Sources */,
+				EA6759B51DB235ED008F9963 /* ExtensionDelegate.swift in Sources */,
+				EA6759B31DB235ED008F9963 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA67598A1DB235ED008F9963 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA6759731DB235ED008F9963 /* Emersy */;
+			targetProxy = EA6759891DB235ED008F9963 /* PBXContainerItemProxy */;
+		};
+		EA6759951DB235ED008F9963 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA6759731DB235ED008F9963 /* Emersy */;
+			targetProxy = EA6759941DB235ED008F9963 /* PBXContainerItemProxy */;
+		};
+		EA67599F1DB235ED008F9963 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA67599B1DB235ED008F9963 /* Emersy WatchKit App */;
+			targetProxy = EA67599E1DB235ED008F9963 /* PBXContainerItemProxy */;
+		};
+		EA6759AE1DB235ED008F9963 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA6759AA1DB235ED008F9963 /* Emersy WatchKit Extension */;
+			targetProxy = EA6759AD1DB235ED008F9963 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA67597B1DB235ED008F9963 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA67597C1DB235ED008F9963 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA6759801DB235ED008F9963 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA6759811DB235ED008F9963 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EA6759A11DB235ED008F9963 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA6759A21DB235ED008F9963 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA6759BD1DB235ED008F9963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA6759BE1DB235ED008F9963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA6759C01DB235ED008F9963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = "Emersy WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.Emersy.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		EA6759C11DB235ED008F9963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = "Emersy WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.Emersy.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		EA6759C41DB235ED008F9963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				IBSC_MODULE = Emersy_WatchKit_Extension;
+				INFOPLIST_FILE = "Emersy WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.Emersy.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		EA6759C51DB235ED008F9963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				IBSC_MODULE = Emersy_WatchKit_Extension;
+				INFOPLIST_FILE = "Emersy WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.Emersy.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		EA6759C81DB235ED008F9963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = Emersy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.Emersy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EA6759C91DB235ED008F9963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = Emersy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.Emersy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		EA6759CB1DB235ED008F9963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = EmersyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.EmersyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Emersy.app/Emersy";
+			};
+			name = Debug;
+		};
+		EA6759CC1DB235ED008F9963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = EmersyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.EmersyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Emersy.app/Emersy";
+			};
+			name = Release;
+		};
+		EA6759CE1DB235ED008F9963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = EmersyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.EmersyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Emersy;
+			};
+			name = Debug;
+		};
+		EA6759CF1DB235ED008F9963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 4C34FT6ABU;
+				INFOPLIST_FILE = EmersyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tm.EmersyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Emersy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA67596F1DB235ED008F9963 /* Build configuration list for PBXProject "Emersy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA6759BD1DB235ED008F9963 /* Debug */,
+				EA6759BE1DB235ED008F9963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA6759BF1DB235ED008F9963 /* Build configuration list for PBXNativeTarget "Emersy WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA6759C01DB235ED008F9963 /* Debug */,
+				EA6759C11DB235ED008F9963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EA6759C31DB235ED008F9963 /* Build configuration list for PBXNativeTarget "Emersy WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA6759C41DB235ED008F9963 /* Debug */,
+				EA6759C51DB235ED008F9963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EA6759C71DB235ED008F9963 /* Build configuration list for PBXNativeTarget "Emersy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA6759C81DB235ED008F9963 /* Debug */,
+				EA6759C91DB235ED008F9963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EA6759CA1DB235ED008F9963 /* Build configuration list for PBXNativeTarget "EmersyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA6759CB1DB235ED008F9963 /* Debug */,
+				EA6759CC1DB235ED008F9963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EA6759CD1DB235ED008F9963 /* Build configuration list for PBXNativeTarget "EmersyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA6759CE1DB235ED008F9963 /* Debug */,
+				EA6759CF1DB235ED008F9963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA67596C1DB235ED008F9963 /* Project object */;
+}
