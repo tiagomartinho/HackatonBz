@@ -171,12 +171,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Az8-jt-fIQ"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Az8-jt-fIQ">
+                                <frame key="frameInset" width="1000" height="1000"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="lM6-vY-ek3" appends="YES" id="Hw2-fH-thb"/>
+                                </connections>
+                            </mapView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="T3F-w1-WxJ">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qje-ty-3Wk">
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-8" translatesAutoresizingMaskIntoConstraints="NO" id="sPY-UG-Laj">
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mf-i5-3T6">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <state key="normal" title="Calculate"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="sPY-UG-Laj" secondAttribute="trailing" constant="8" id="9DU-Bm-BIW"/>
+                                            <constraint firstItem="sPY-UG-Laj" firstAttribute="leading" secondItem="qje-ty-3Wk" secondAttribute="leading" constant="8" id="Ike-x7-PKh"/>
+                                            <constraint firstAttribute="bottom" secondItem="sPY-UG-Laj" secondAttribute="bottom" constant="8" id="dHi-47-cDi"/>
+                                            <constraint firstItem="sPY-UG-Laj" firstAttribute="top" secondItem="qje-ty-3Wk" secondAttribute="top" constant="8" id="hqx-Ki-BVe"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="T3F-w1-WxJ" firstAttribute="centerX" secondItem="teN-QE-5Oa" secondAttribute="centerX" id="84A-w6-DgB"/>
                             <constraint firstItem="Az8-jt-fIQ" firstAttribute="top" secondItem="teN-QE-5Oa" secondAttribute="top" id="Hot-1R-ISE"/>
                             <constraint firstItem="jin-wt-S88" firstAttribute="top" secondItem="Az8-jt-fIQ" secondAttribute="bottom" id="JH7-Qe-Rjr"/>
+                            <constraint firstItem="jin-wt-S88" firstAttribute="top" secondItem="T3F-w1-WxJ" secondAttribute="bottom" constant="30" id="QEU-Be-bPx"/>
                             <constraint firstAttribute="trailing" secondItem="Az8-jt-fIQ" secondAttribute="trailing" id="S40-1c-hkZ"/>
                             <constraint firstItem="Az8-jt-fIQ" firstAttribute="leading" secondItem="teN-QE-5Oa" secondAttribute="leading" id="qv3-2k-zzW"/>
                         </constraints>
@@ -184,6 +220,7 @@
                     <tabBarItem key="tabBarItem" title="Pumps" image="fire" id="x3G-y9-emu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eib-X4-eeN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="lM6-vY-ek3"/>
             </objects>
             <point key="canvasLocation" x="608.79999999999995" y="941.37931034482767"/>
         </scene>
