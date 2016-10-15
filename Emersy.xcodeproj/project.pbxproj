@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01D8B7573AA651AC0F04FA04 /* Pods_Emersy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6200F65B35986465AC489AC5 /* Pods_Emersy.framework */; };
 		EA47A1C31DB2678800F1D89D /* MissionNotificationCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA47A1C21DB2678800F1D89D /* MissionNotificationCategories.swift */; };
 		EA47A1C51DB268EF00F1D89D /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA47A1C41DB268EF00F1D89D /* Notification.swift */; };
 		EA47A1C71DB269B600F1D89D /* DeviceTokenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA47A1C61DB269B600F1D89D /* DeviceTokenData.swift */; };
@@ -26,6 +27,7 @@
 		EA6759B71DB235ED008F9963 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6759B61DB235ED008F9963 /* NotificationController.swift */; };
 		EA6759B91DB235ED008F9963 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6759B81DB235ED008F9963 /* ComplicationController.swift */; };
 		EA6759BB1DB235ED008F9963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA6759BA1DB235ED008F9963 /* Assets.xcassets */; };
+		EAF53A2A1DB26BF2003CCC4C /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF53A291DB26BF2003CCC4C /* NotificationHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4FD39EEB59A8FDC4213BE666 /* Pods-Emersy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emersy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Emersy/Pods-Emersy.debug.xcconfig"; sourceTree = "<group>"; };
+		6200F65B35986465AC489AC5 /* Pods_Emersy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emersy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7083C3E0C85C60C746DFC7B /* Pods-Emersy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emersy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Emersy/Pods-Emersy.release.xcconfig"; sourceTree = "<group>"; };
 		EA47A1C21DB2678800F1D89D /* MissionNotificationCategories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionNotificationCategories.swift; sourceTree = "<group>"; };
 		EA47A1C41DB268EF00F1D89D /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		EA47A1C61DB269B600F1D89D /* DeviceTokenData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceTokenData.swift; sourceTree = "<group>"; };
@@ -114,6 +119,7 @@
 		EA6759BA1DB235ED008F9963 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA6759BC1DB235ED008F9963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA6759D31DB25775008F9963 /* Emersy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Emersy.entitlements; sourceTree = "<group>"; };
+		EAF53A291DB26BF2003CCC4C /* NotificationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01D8B7573AA651AC0F04FA04 /* Pods_Emersy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +155,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9ED8BEDD265AC5134A31E743 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6200F65B35986465AC489AC5 /* Pods_Emersy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5EF7A0AA3B15262448E8FE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4FD39EEB59A8FDC4213BE666 /* Pods-Emersy.debug.xcconfig */,
+				B7083C3E0C85C60C746DFC7B /* Pods-Emersy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EA47A1C81DB26A8500F1D89D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +193,8 @@
 				EA6759A01DB235ED008F9963 /* Emersy WatchKit App */,
 				EA6759AF1DB235ED008F9963 /* Emersy WatchKit Extension */,
 				EA6759751DB235ED008F9963 /* Products */,
+				E5EF7A0AA3B15262448E8FE9 /* Pods */,
+				9ED8BEDD265AC5134A31E743 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				EA6759771DB235ED008F9963 /* AppDelegate.swift */,
+				EAF53A291DB26BF2003CCC4C /* NotificationHandler.swift */,
 				EA47A1C21DB2678800F1D89D /* MissionNotificationCategories.swift */,
 				EA47A1C41DB268EF00F1D89D /* Notification.swift */,
 				EA6759791DB235ED008F9963 /* ViewController.swift */,
@@ -254,10 +281,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA6759C71DB235ED008F9963 /* Build configuration list for PBXNativeTarget "Emersy" */;
 			buildPhases = (
+				74B7E83EFAAE97766F0FC598 /* Check Pods Manifest.lock */,
 				EA6759701DB235ED008F9963 /* Sources */,
 				EA6759711DB235ED008F9963 /* Frameworks */,
 				EA6759721DB235ED008F9963 /* Resources */,
 				EA6759C61DB235ED008F9963 /* Embed Watch Content */,
+				61B9A3D8F414B360B65323C6 /* Embed Pods Frameworks */,
+				E9CEDA199417EE80E3914949 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -452,12 +482,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		61B9A3D8F414B360B65323C6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Emersy/Pods-Emersy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74B7E83EFAAE97766F0FC598 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E9CEDA199417EE80E3914949 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Emersy/Pods-Emersy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EA6759701DB235ED008F9963 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EA47A1C51DB268EF00F1D89D /* Notification.swift in Sources */,
+				EAF53A2A1DB26BF2003CCC4C /* NotificationHandler.swift in Sources */,
 				EA67597A1DB235ED008F9963 /* ViewController.swift in Sources */,
 				EA47A1C31DB2678800F1D89D /* MissionNotificationCategories.swift in Sources */,
 				EA47A1C71DB269B600F1D89D /* DeviceTokenData.swift in Sources */,
@@ -710,6 +789,7 @@
 		};
 		EA6759C81DB235ED008F9963 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FD39EEB59A8FDC4213BE666 /* Pods-Emersy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Emersy/Emersy.entitlements;
@@ -724,6 +804,7 @@
 		};
 		EA6759C91DB235ED008F9963 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7083C3E0C85C60C746DFC7B /* Pods-Emersy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Emersy/Emersy.entitlements;
