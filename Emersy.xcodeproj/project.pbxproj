@@ -28,6 +28,9 @@
 		EA6759B91DB235ED008F9963 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6759B81DB235ED008F9963 /* ComplicationController.swift */; };
 		EA6759BB1DB235ED008F9963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA6759BA1DB235ED008F9963 /* Assets.xcassets */; };
 		EAF53A2A1DB26BF2003CCC4C /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF53A291DB26BF2003CCC4C /* NotificationHandler.swift */; };
+		EAF53A2C1DB26F32003CCC4C /* NotificationHandlerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF53A2B1DB26F32003CCC4C /* NotificationHandlerBuilder.swift */; };
+		EAF53A2E1DB26F4D003CCC4C /* RefuseNotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF53A2D1DB26F4D003CCC4C /* RefuseNotificationHandler.swift */; };
+		EAF53A301DB26F68003CCC4C /* AcceptNotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF53A2F1DB26F68003CCC4C /* AcceptNotificationHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +123,9 @@
 		EA6759BC1DB235ED008F9963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA6759D31DB25775008F9963 /* Emersy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Emersy.entitlements; sourceTree = "<group>"; };
 		EAF53A291DB26BF2003CCC4C /* NotificationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
+		EAF53A2B1DB26F32003CCC4C /* NotificationHandlerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationHandlerBuilder.swift; sourceTree = "<group>"; };
+		EAF53A2D1DB26F4D003CCC4C /* RefuseNotificationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefuseNotificationHandler.swift; sourceTree = "<group>"; };
+		EAF53A2F1DB26F68003CCC4C /* AcceptNotificationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcceptNotificationHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,7 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				EA6759771DB235ED008F9963 /* AppDelegate.swift */,
-				EAF53A291DB26BF2003CCC4C /* NotificationHandler.swift */,
+				EAF53A311DB26F79003CCC4C /* Notification Handler */,
 				EA47A1C21DB2678800F1D89D /* MissionNotificationCategories.swift */,
 				EA47A1C41DB268EF00F1D89D /* Notification.swift */,
 				EA6759791DB235ED008F9963 /* ViewController.swift */,
@@ -272,6 +278,17 @@
 				EA6759B11DB235ED008F9963 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAF53A311DB26F79003CCC4C /* Notification Handler */ = {
+			isa = PBXGroup;
+			children = (
+				EAF53A291DB26BF2003CCC4C /* NotificationHandler.swift */,
+				EAF53A2B1DB26F32003CCC4C /* NotificationHandlerBuilder.swift */,
+				EAF53A2D1DB26F4D003CCC4C /* RefuseNotificationHandler.swift */,
+				EAF53A2F1DB26F68003CCC4C /* AcceptNotificationHandler.swift */,
+			);
+			name = "Notification Handler";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -536,11 +553,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA47A1C51DB268EF00F1D89D /* Notification.swift in Sources */,
+				EAF53A301DB26F68003CCC4C /* AcceptNotificationHandler.swift in Sources */,
+				EAF53A2E1DB26F4D003CCC4C /* RefuseNotificationHandler.swift in Sources */,
 				EAF53A2A1DB26BF2003CCC4C /* NotificationHandler.swift in Sources */,
 				EA67597A1DB235ED008F9963 /* ViewController.swift in Sources */,
 				EA47A1C31DB2678800F1D89D /* MissionNotificationCategories.swift in Sources */,
 				EA47A1C71DB269B600F1D89D /* DeviceTokenData.swift in Sources */,
 				EA6759781DB235ED008F9963 /* AppDelegate.swift in Sources */,
+				EAF53A2C1DB26F32003CCC4C /* NotificationHandlerBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
