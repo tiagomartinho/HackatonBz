@@ -22,9 +22,6 @@
                                     <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="E69-Y0-2sn" kind="show" identifier="showMissionSegue" id="duE-3f-0c0"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -41,14 +38,14 @@
         <!--Mission Detail View Controller-->
         <scene sceneID="yXv-dC-5eY">
             <objects>
-                <tableViewController id="E69-Y0-2sn" customClass="MissionDetailViewController" customModule="Emersy" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MissionDetailViewController" id="E69-Y0-2sn" customClass="MissionDetailViewController" customModule="Emersy" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="M1G-Pk-hUT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="jFg-E6-6pK">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jFg-E6-6pK" id="Y09-e6-ckI">
                                     <frame key="frameInset" width="375" height="43"/>
