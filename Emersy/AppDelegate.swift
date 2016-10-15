@@ -26,7 +26,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
                                          didReceive response: UNNotificationResponse,
                                          withCompletionHandler completionHandler: @escaping () -> Void) {
         print("userNotificationCenter")
-        NotificationHandler().handle(with: response.actionIdentifier)
-        completionHandler()
+        NotificationHandler().handle(with: response.actionIdentifier, withCompletionHandler: completionHandler)
     }
 }
