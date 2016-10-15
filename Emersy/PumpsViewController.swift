@@ -7,6 +7,15 @@ class PumpsViewController: UIViewController {
 
     var annotations = [MKPointAnnotation]()
 
+    let locationManager = CLLocationManager()
+    var location: CLLocation?
+    var mapZoomSet = false
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        getUserPosition()
+    }
+
     @IBAction func longPressGesture(_ sender: UILongPressGestureRecognizer) {
         if sender.state == .began {
             let touchPoint = sender.location(in: mapView)
