@@ -14,6 +14,14 @@ class PumpsViewController: UIViewController {
             let annotation = MKPointAnnotation()
             annotation.coordinate = newCoordinates
             mapView.addAnnotation(annotation)
+            annotations.append(annotation)
+        }
+    }
+
+    @IBAction func undo(_ sender: UIButton) {
+        if let last = annotations.last {
+            mapView.removeAnnotation(last)
+            annotations.removeLast()
         }
     }
 }

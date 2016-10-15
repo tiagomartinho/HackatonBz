@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -157,6 +158,37 @@
                                     <outletCollection property="gestureRecognizers" destination="lM6-vY-ek3" appends="YES" id="Hw2-fH-thb"/>
                                 </connections>
                             </mapView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ZcL-T6-g7b">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sdb-im-9gx">
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-8" translatesAutoresizingMaskIntoConstraints="NO" id="2NY-2d-mM4">
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCJ-cM-yqK">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <state key="normal" title="Undo"/>
+                                                        <connections>
+                                                            <action selector="undo:" destination="WLw-jm-fxS" eventType="touchUpInside" id="aIk-ur-Ljc"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="2NY-2d-mM4" firstAttribute="top" secondItem="Sdb-im-9gx" secondAttribute="top" constant="8" id="Ecp-Tc-6P1"/>
+                                            <constraint firstAttribute="bottom" secondItem="2NY-2d-mM4" secondAttribute="bottom" constant="8" id="OqO-gr-tGy"/>
+                                            <constraint firstAttribute="trailing" secondItem="2NY-2d-mM4" secondAttribute="trailing" constant="8" id="euG-bk-KNZ"/>
+                                            <constraint firstItem="2NY-2d-mM4" firstAttribute="leading" secondItem="Sdb-im-9gx" secondAttribute="leading" constant="8" id="oYD-dX-R3e"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="T3F-w1-WxJ">
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qje-ty-3Wk">
@@ -188,11 +220,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="T3F-w1-WxJ" firstAttribute="centerX" secondItem="teN-QE-5Oa" secondAttribute="centerX" id="84A-w6-DgB"/>
+                            <constraint firstItem="T3F-w1-WxJ" firstAttribute="trailing" secondItem="teN-QE-5Oa" secondAttribute="trailingMargin" id="3tB-f5-6GC"/>
                             <constraint firstItem="Az8-jt-fIQ" firstAttribute="top" secondItem="teN-QE-5Oa" secondAttribute="top" id="Hot-1R-ISE"/>
                             <constraint firstItem="jin-wt-S88" firstAttribute="top" secondItem="Az8-jt-fIQ" secondAttribute="bottom" id="JH7-Qe-Rjr"/>
                             <constraint firstItem="jin-wt-S88" firstAttribute="top" secondItem="T3F-w1-WxJ" secondAttribute="bottom" constant="30" id="QEU-Be-bPx"/>
                             <constraint firstAttribute="trailing" secondItem="Az8-jt-fIQ" secondAttribute="trailing" id="S40-1c-hkZ"/>
+                            <constraint firstItem="jin-wt-S88" firstAttribute="top" secondItem="ZcL-T6-g7b" secondAttribute="bottom" constant="30" id="ap8-f8-aHS"/>
+                            <constraint firstItem="qCJ-cM-yqK" firstAttribute="width" secondItem="7mf-i5-3T6" secondAttribute="width" id="dCe-Fg-8vP"/>
+                            <constraint firstItem="ZcL-T6-g7b" firstAttribute="leading" secondItem="teN-QE-5Oa" secondAttribute="leadingMargin" id="jCQ-Sm-xI0"/>
                             <constraint firstItem="Az8-jt-fIQ" firstAttribute="leading" secondItem="teN-QE-5Oa" secondAttribute="leading" id="qv3-2k-zzW"/>
                         </constraints>
                     </view>
