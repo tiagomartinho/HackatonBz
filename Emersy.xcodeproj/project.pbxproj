@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA47A1C31DB2678800F1D89D /* MissionNotificationCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA47A1C21DB2678800F1D89D /* MissionNotificationCategories.swift */; };
 		EA6759781DB235ED008F9963 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6759771DB235ED008F9963 /* AppDelegate.swift */; };
 		EA67597A1DB235ED008F9963 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6759791DB235ED008F9963 /* ViewController.swift */; };
 		EA67597D1DB235ED008F9963 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA67597B1DB235ED008F9963 /* Main.storyboard */; };
@@ -82,6 +83,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EA47A1C21DB2678800F1D89D /* MissionNotificationCategories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionNotificationCategories.swift; sourceTree = "<group>"; };
 		EA6759741DB235ED008F9963 /* Emersy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emersy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA6759771DB235ED008F9963 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA6759791DB235ED008F9963 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			children = (
 				EA6759D31DB25775008F9963 /* Emersy.entitlements */,
 				EA6759771DB235ED008F9963 /* AppDelegate.swift */,
+				EA47A1C21DB2678800F1D89D /* MissionNotificationCategories.swift */,
 				EA6759791DB235ED008F9963 /* ViewController.swift */,
 				EA67597B1DB235ED008F9963 /* Main.storyboard */,
 				EA67597E1DB235ED008F9963 /* Assets.xcassets */,
@@ -441,6 +444,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA67597A1DB235ED008F9963 /* ViewController.swift in Sources */,
+				EA47A1C31DB2678800F1D89D /* MissionNotificationCategories.swift in Sources */,
 				EA6759781DB235ED008F9963 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,17 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         center.requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
             print("requestNotificationsAuthorizationGranted? \(granted)")
         }
-        center.setNotificationCategories(notificationCategories())
+        center.setNotificationCategories(MissionNotificationCategories.get())
         center.delegate = self
-    }
-
-    func notificationCategories() -> Set<UNNotificationCategory> {
-        let acceptAction = UNNotificationAction(identifier: "ACCEPT", title: "ACCEPT", options: [.foreground])
-        let refuseAction = UNNotificationAction(identifier: "REFUSE", title: "REFUSE", options: [.destructive, .foreground])
-        let missionCategory = UNNotificationCategory(identifier: "MISSION", actions: [acceptAction, refuseAction], intentIdentifiers: [], options: [])
-        var categories = Set<UNNotificationCategory>()
-        categories.insert(missionCategory)
-        return categories
     }
 
     func application(_ application: UIApplication,
