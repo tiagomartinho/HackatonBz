@@ -11,8 +11,8 @@ class PumpsViewController: UIViewController, MKMapViewDelegate {
     var location: CLLocation?
     var mapZoomSet = false
 
-    var pa: String?
-    var flowRate: String?
+    var pa: String? = "8"
+    var flowRate: String? = "800"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,9 +28,9 @@ class PumpsViewController: UIViewController, MKMapViewDelegate {
             annotation.coordinate = newCoordinates
             mapView.addAnnotation(annotation)
             annotations.append(annotation)
-            if annotations.count == 1 {
-                askHydrantInformation()
-            }
+//            if annotations.count == 1 {
+//                askHydrantInformation()
+//            }
         }
     }
 
@@ -91,5 +91,7 @@ class PumpsViewController: UIViewController, MKMapViewDelegate {
     @IBAction func calculate(_ sender: UIButton) {
         let fire = annotations.remove(at: 1)
         annotations.append(fire)
+        let input = PumpsServiceInput(pa: pa ?? "", flowRate: flowRate ?? "", annotations: annotations)
+        PumpsService().send(input: input)
     }
 }

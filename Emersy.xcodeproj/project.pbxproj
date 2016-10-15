@@ -10,6 +10,9 @@
 		01D8B7573AA651AC0F04FA04 /* Pods_Emersy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6200F65B35986465AC489AC5 /* Pods_Emersy.framework */; };
 		EA2C36521DB2A46C001B03D5 /* ViewController+CLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2C36511DB2A46C001B03D5 /* ViewController+CLLocationManagerDelegate.swift */; };
 		EA2C36541DB2B1AE001B03D5 /* PumpsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2C36531DB2B1AE001B03D5 /* PumpsService.swift */; };
+		EA2C36571DB2B71A001B03D5 /* pumpFinalTrack.json in Resources */ = {isa = PBXBuildFile; fileRef = EA2C36551DB2B71A001B03D5 /* pumpFinalTrack.json */; };
+		EA2C36581DB2B71A001B03D5 /* tubeTrack.json in Resources */ = {isa = PBXBuildFile; fileRef = EA2C36561DB2B71A001B03D5 /* tubeTrack.json */; };
+		EA2C365A1DB2B95F001B03D5 /* tubeTrackSimple.json in Resources */ = {isa = PBXBuildFile; fileRef = EA2C36591DB2B95F001B03D5 /* tubeTrackSimple.json */; };
 		EA47A1C31DB2678800F1D89D /* MissionNotificationCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA47A1C21DB2678800F1D89D /* MissionNotificationCategories.swift */; };
 		EA47A1C51DB268EF00F1D89D /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA47A1C41DB268EF00F1D89D /* Notification.swift */; };
 		EA47A1C71DB269B600F1D89D /* DeviceTokenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA47A1C61DB269B600F1D89D /* DeviceTokenData.swift */; };
@@ -102,6 +105,9 @@
 		B7083C3E0C85C60C746DFC7B /* Pods-Emersy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emersy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Emersy/Pods-Emersy.release.xcconfig"; sourceTree = "<group>"; };
 		EA2C36511DB2A46C001B03D5 /* ViewController+CLLocationManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+CLLocationManagerDelegate.swift"; sourceTree = "<group>"; };
 		EA2C36531DB2B1AE001B03D5 /* PumpsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PumpsService.swift; sourceTree = "<group>"; };
+		EA2C36551DB2B71A001B03D5 /* pumpFinalTrack.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pumpFinalTrack.json; sourceTree = "<group>"; };
+		EA2C36561DB2B71A001B03D5 /* tubeTrack.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tubeTrack.json; sourceTree = "<group>"; };
+		EA2C36591DB2B95F001B03D5 /* tubeTrackSimple.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tubeTrackSimple.json; sourceTree = "<group>"; };
 		EA47A1C21DB2678800F1D89D /* MissionNotificationCategories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionNotificationCategories.swift; sourceTree = "<group>"; };
 		EA47A1C41DB268EF00F1D89D /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		EA47A1C61DB269B600F1D89D /* DeviceTokenData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceTokenData.swift; sourceTree = "<group>"; };
@@ -247,6 +253,9 @@
 		EA67598B1DB235ED008F9963 /* EmersyTests */ = {
 			isa = PBXGroup;
 			children = (
+				EA2C36591DB2B95F001B03D5 /* tubeTrackSimple.json */,
+				EA2C36551DB2B71A001B03D5 /* pumpFinalTrack.json */,
+				EA2C36561DB2B71A001B03D5 /* tubeTrack.json */,
 				EA67598C1DB235ED008F9963 /* EmersyTests.swift */,
 				EA67598E1DB235ED008F9963 /* Info.plist */,
 			);
@@ -503,6 +512,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA2C365A1DB2B95F001B03D5 /* tubeTrackSimple.json in Resources */,
+				EA2C36571DB2B71A001B03D5 /* pumpFinalTrack.json in Resources */,
+				EA2C36581DB2B71A001B03D5 /* tubeTrack.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
