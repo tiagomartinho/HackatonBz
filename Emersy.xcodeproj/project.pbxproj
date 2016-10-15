@@ -31,6 +31,7 @@
 		EAF53A2C1DB26F32003CCC4C /* NotificationHandlerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF53A2B1DB26F32003CCC4C /* NotificationHandlerBuilder.swift */; };
 		EAF53A2E1DB26F4D003CCC4C /* RefuseNotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF53A2D1DB26F4D003CCC4C /* RefuseNotificationHandler.swift */; };
 		EAF53A301DB26F68003CCC4C /* AcceptNotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF53A2F1DB26F68003CCC4C /* AcceptNotificationHandler.swift */; };
+		EAF53A351DB27201003CCC4C /* AlamofireMissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF53A341DB27201003CCC4C /* AlamofireMissionService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +127,7 @@
 		EAF53A2B1DB26F32003CCC4C /* NotificationHandlerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationHandlerBuilder.swift; sourceTree = "<group>"; };
 		EAF53A2D1DB26F4D003CCC4C /* RefuseNotificationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefuseNotificationHandler.swift; sourceTree = "<group>"; };
 		EAF53A2F1DB26F68003CCC4C /* AcceptNotificationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcceptNotificationHandler.swift; sourceTree = "<group>"; };
+		EAF53A341DB27201003CCC4C /* AlamofireMissionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireMissionService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +289,7 @@
 				EAF53A2B1DB26F32003CCC4C /* NotificationHandlerBuilder.swift */,
 				EAF53A2D1DB26F4D003CCC4C /* RefuseNotificationHandler.swift */,
 				EAF53A2F1DB26F68003CCC4C /* AcceptNotificationHandler.swift */,
+				EAF53A341DB27201003CCC4C /* AlamofireMissionService.swift */,
 			);
 			name = "Notification Handler";
 			sourceTree = "<group>";
@@ -556,6 +559,7 @@
 				EAF53A301DB26F68003CCC4C /* AcceptNotificationHandler.swift in Sources */,
 				EAF53A2E1DB26F4D003CCC4C /* RefuseNotificationHandler.swift in Sources */,
 				EAF53A2A1DB26BF2003CCC4C /* NotificationHandler.swift in Sources */,
+				EAF53A351DB27201003CCC4C /* AlamofireMissionService.swift in Sources */,
 				EA67597A1DB235ED008F9963 /* ViewController.swift in Sources */,
 				EA47A1C31DB2678800F1D89D /* MissionNotificationCategories.swift in Sources */,
 				EA47A1C71DB269B600F1D89D /* DeviceTokenData.swift in Sources */,

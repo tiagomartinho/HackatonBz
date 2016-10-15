@@ -1,6 +1,9 @@
 class RefuseNotificationHandler: NotificationHandler {
     func handle(withCompletionHandler completionHandler: @escaping () -> Void) {
         print("REFUSE")
-        completionHandler()
+        AlamofireMissionService().refuse { (response) in
+            print("response status code: \(response.response?.statusCode)")
+            completionHandler()
+        }
     }
 }

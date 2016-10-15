@@ -1,6 +1,10 @@
 class AcceptNotificationHandler: NotificationHandler {
+
     func handle(withCompletionHandler completionHandler: @escaping () -> Void) {
         print("ACCEPT")
-        completionHandler()
+        AlamofireMissionService().accept { (response) in
+            print("response status code: \(response.response?.statusCode)")
+            completionHandler()
+        }
     }
 }
