@@ -9,9 +9,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions
         launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        requestAndRegisterForNotifications(application)
+        return true
+    }
+
+    func requestAndRegisterForNotifications(_ application: UIApplication) {
         requestNotificationsAuthorization()
         application.registerForRemoteNotifications()
-        return true
     }
 
     func requestNotificationsAuthorization() {
