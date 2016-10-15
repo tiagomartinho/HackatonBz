@@ -32,7 +32,7 @@ struct PumpsServiceInput {
 
     func annotationToPoint(_ annotation: MKAnnotation) -> [String: Any] {
         let lat = annotation.coordinate.latitude
-        let lng = annotation.coordinate.latitude
+        let lng = annotation.coordinate.longitude
         let point: [String: Any] = [
             "lat": lat,
             "lng": lng

@@ -1,5 +1,6 @@
 import UIKit
 import MapKit
+import SVProgressHUD
 
 class PumpsViewController: UIViewController, MKMapViewDelegate {
 
@@ -92,6 +93,9 @@ class PumpsViewController: UIViewController, MKMapViewDelegate {
         let fire = annotations.remove(at: 1)
         annotations.append(fire)
         let input = PumpsServiceInput(pa: pa ?? "", flowRate: flowRate ?? "", annotations: annotations)
-        PumpsService().send(input: input)
+        SVProgressHUD.show()
+        PumpsService().send(input: input) { response in
+            SVProgressHUD.dismiss()
+        }
     }
 }

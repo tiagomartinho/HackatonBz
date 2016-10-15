@@ -4,6 +4,7 @@ use_frameworks!
 target 'Emersy' do
   pod 'SwiftyJSON'
   pod 'Alamofire', '~> 4.0'
+  pod 'SVProgressHUD'
 end
 
 target 'EmersyTests' do
