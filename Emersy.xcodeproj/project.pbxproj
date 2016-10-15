@@ -12,7 +12,7 @@
 		EA47A1C51DB268EF00F1D89D /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA47A1C41DB268EF00F1D89D /* Notification.swift */; };
 		EA47A1C71DB269B600F1D89D /* DeviceTokenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA47A1C61DB269B600F1D89D /* DeviceTokenData.swift */; };
 		EA6759781DB235ED008F9963 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6759771DB235ED008F9963 /* AppDelegate.swift */; };
-		EA67597A1DB235ED008F9963 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6759791DB235ED008F9963 /* ViewController.swift */; };
+		EA67597A1DB235ED008F9963 /* MissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6759791DB235ED008F9963 /* MissionViewController.swift */; };
 		EA67597D1DB235ED008F9963 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA67597B1DB235ED008F9963 /* Main.storyboard */; };
 		EA67597F1DB235ED008F9963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA67597E1DB235ED008F9963 /* Assets.xcassets */; };
 		EA6759821DB235ED008F9963 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6759801DB235ED008F9963 /* LaunchScreen.storyboard */; };
@@ -99,7 +99,7 @@
 		EA47A1C61DB269B600F1D89D /* DeviceTokenData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceTokenData.swift; sourceTree = "<group>"; };
 		EA6759741DB235ED008F9963 /* Emersy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emersy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA6759771DB235ED008F9963 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA6759791DB235ED008F9963 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA6759791DB235ED008F9963 /* MissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionViewController.swift; sourceTree = "<group>"; };
 		EA67597C1DB235ED008F9963 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA67597E1DB235ED008F9963 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA6759811DB235ED008F9963 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -225,7 +225,7 @@
 				EAF53A311DB26F79003CCC4C /* Notification Handler */,
 				EA47A1C21DB2678800F1D89D /* MissionNotificationCategories.swift */,
 				EA47A1C41DB268EF00F1D89D /* Notification.swift */,
-				EA6759791DB235ED008F9963 /* ViewController.swift */,
+				EA6759791DB235ED008F9963 /* MissionViewController.swift */,
 				EA67597B1DB235ED008F9963 /* Main.storyboard */,
 				EA47A1C81DB26A8500F1D89D /* Supporting Files */,
 			);
@@ -560,7 +560,7 @@
 				EAF53A2E1DB26F4D003CCC4C /* RefuseNotificationHandler.swift in Sources */,
 				EAF53A2A1DB26BF2003CCC4C /* NotificationHandler.swift in Sources */,
 				EAF53A351DB27201003CCC4C /* AlamofireMissionService.swift in Sources */,
-				EA67597A1DB235ED008F9963 /* ViewController.swift in Sources */,
+				EA67597A1DB235ED008F9963 /* MissionViewController.swift in Sources */,
 				EA47A1C31DB2678800F1D89D /* MissionNotificationCategories.swift in Sources */,
 				EA47A1C71DB269B600F1D89D /* DeviceTokenData.swift in Sources */,
 				EA6759781DB235ED008F9963 /* AppDelegate.swift in Sources */,
