@@ -1,7 +1,7 @@
 import UIKit
 import MapKit
 
-class PumpsViewController: UIViewController {
+class PumpsViewController: UIViewController, MKMapViewDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
 
@@ -14,6 +14,7 @@ class PumpsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getUserPosition()
+        mapView.delegate = self
     }
 
     @IBAction func longPressGesture(_ sender: UILongPressGestureRecognizer) {
@@ -32,5 +33,15 @@ class PumpsViewController: UIViewController {
             mapView.removeAnnotation(last)
             annotations.removeLast()
         }
+    }
+
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        if annotation is MKUserLocation {
+            return nil;
+        }
+
+        let annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "reuseIdentifier")
+        annotationView.pinTintColor = #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)
+        return annotationView
     }
 }
