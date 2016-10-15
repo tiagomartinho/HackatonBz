@@ -47,23 +47,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VeM-cb-Phb">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VeM-cb-Phb">
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You accepted this mission" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTL-5A-xgy">
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KbE-yU-eDW">
-                                        <segments>
-                                            <segment title="Accepted"/>
-                                            <segment title="Refused"/>
-                                            <segment title="Unknown"/>
-                                        </segments>
-                                        <connections>
-                                            <action selector="usersStatesChanged:" destination="alM-ng-hVS" eventType="valueChanged" id="WU5-Ve-IsR"/>
-                                        </connections>
-                                    </segmentedControl>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wwM-ec-DYl">
+                                        <subviews>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👍 You accepted this mission" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTL-5A-xgy">
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PwF-i2-pij">
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6D-9P-y8B">
+                                                        <state key="normal" title="👍 Accept"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8E-zY-ONz">
+                                                        <state key="normal" title="👎 Refuse"/>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="x6D-9P-y8B" firstAttribute="width" secondItem="T8E-zY-ONz" secondAttribute="width" id="ZPf-7Q-iWg"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="PwF-i2-pij" secondAttribute="trailing" id="AaM-AK-7je"/>
+                                            <constraint firstItem="lTL-5A-xgy" firstAttribute="top" secondItem="wwM-ec-DYl" secondAttribute="top" id="UGg-PL-IH0"/>
+                                            <constraint firstItem="PwF-i2-pij" firstAttribute="leading" secondItem="wwM-ec-DYl" secondAttribute="leading" id="YaY-mS-vJ0"/>
+                                            <constraint firstAttribute="bottom" secondItem="PwF-i2-pij" secondAttribute="bottom" constant="20" symbolic="YES" id="lc9-88-Er0"/>
+                                            <constraint firstItem="lTL-5A-xgy" firstAttribute="leading" secondItem="wwM-ec-DYl" secondAttribute="leading" id="nfg-KB-Xw9"/>
+                                            <constraint firstItem="PwF-i2-pij" firstAttribute="top" secondItem="wwM-ec-DYl" secondAttribute="top" id="sjV-79-w6m"/>
+                                            <constraint firstAttribute="bottom" secondItem="lTL-5A-xgy" secondAttribute="bottom" id="uoZ-fG-xfA"/>
+                                            <constraint firstAttribute="trailing" secondItem="lTL-5A-xgy" secondAttribute="trailing" id="vwq-Bd-NWK"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Axm-i3-n4f">
+                                        <subviews>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KbE-yU-eDW">
+                                                <segments>
+                                                    <segment title="👍 Accepted"/>
+                                                    <segment title="👎 Refused"/>
+                                                    <segment title="❔Unknown"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="usersStatesChanged:" destination="alM-ng-hVS" eventType="valueChanged" id="WU5-Ve-IsR"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="KbE-yU-eDW" firstAttribute="top" secondItem="Axm-i3-n4f" secondAttribute="top" constant="20" symbolic="YES" id="ZWH-Px-tEd"/>
+                                            <constraint firstItem="KbE-yU-eDW" firstAttribute="leading" secondItem="Axm-i3-n4f" secondAttribute="leading" constant="20" symbolic="YES" id="i8w-xs-b8U"/>
+                                            <constraint firstAttribute="trailing" secondItem="KbE-yU-eDW" secondAttribute="trailing" constant="20" symbolic="YES" id="iSn-It-WTa"/>
+                                            <constraint firstAttribute="bottom" secondItem="KbE-yU-eDW" secondAttribute="bottom" constant="20" symbolic="YES" id="p18-of-o26"/>
+                                        </constraints>
+                                    </view>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AZr-FW-xUG"/>
                                 </subviews>
                             </stackView>
@@ -73,7 +112,7 @@
                             <constraint firstItem="VeM-cb-Phb" firstAttribute="top" secondItem="WYj-Bx-sfD" secondAttribute="bottom" constant="20" id="JJD-6T-F3H"/>
                             <constraint firstItem="VeM-cb-Phb" firstAttribute="leading" secondItem="NSj-by-dbm" secondAttribute="leading" id="SIZ-fX-n09"/>
                             <constraint firstAttribute="trailing" secondItem="VeM-cb-Phb" secondAttribute="trailing" id="TIp-91-3EJ"/>
-                            <constraint firstItem="6lR-ws-STD" firstAttribute="top" secondItem="VeM-cb-Phb" secondAttribute="bottom" constant="8" symbolic="YES" id="ebl-zV-Xjg"/>
+                            <constraint firstItem="6lR-ws-STD" firstAttribute="top" secondItem="VeM-cb-Phb" secondAttribute="bottom" id="ebl-zV-Xjg"/>
                         </constraints>
                     </view>
                     <connections>
