@@ -59,12 +59,17 @@ extension Pump: MKAnnotation {
         return CLLocationCoordinate2D(latitude: lat, longitude: lng)
     }
 
-    var title: String? { return nil }
+    var title: String? { return "Pressure: \(pressure.format()) bar" }
 
     var subtitle: String? {
-        let pressureS = "Pressure \(pressure) Ba"
-        let tubesBeforeS = "Tubes Before \(tubesBefore)"
-        let elevationS = "Elevation \(elevation)"
-        return pressureS + ", " + tubesBeforeS + ", " + elevationS
+        let tubesBeforeS = "Tubes before: \(tubesBefore)"
+        let elevationS = "Elevation: \(elevation.format()) m"
+        return tubesBeforeS + ", " + elevationS
+    }
+}
+
+extension Double {
+    func format() -> String {
+        return String(format: "%.2f", self)
     }
 }

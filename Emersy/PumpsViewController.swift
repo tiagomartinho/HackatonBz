@@ -90,6 +90,12 @@ class PumpsViewController: UIViewController, MKMapViewDelegate {
         default:
             annotationView.pinTintColor = #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)
         }
+
+        if annotation is Pump {
+            annotationView.pinTintColor = #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1)
+            annotationView.canShowCallout = true
+        }
+
         return annotationView
     }
 
