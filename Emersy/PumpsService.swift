@@ -23,7 +23,7 @@ class PumpsService {
     }
 }
 
-struct Pump {
+class Pump: NSObject {
     let lng: Double
     let lat: Double
     let elevation: Double
@@ -47,5 +47,24 @@ class PumpBuilder {
             pumps.append(Pump(json: item))
         }
         return pumps
+    }
+}
+
+import CoreLocation
+import MapKit
+
+extension Pump: MKAnnotation {
+
+    var coordinate: CLLocationCoordinate2D {
+        return CLLocationCoordinate2D(latitude: lat, longitude: lng)
+    }
+
+    var title: String? { return nil }
+
+    var subtitle: String? {
+        let pressureS = "Pressure \(pressure) Ba"
+        let tubesBeforeS = "Tubes Before \(tubesBefore)"
+        let elevationS = "Elevation \(elevation)"
+        return pressureS + ", " + tubesBeforeS + ", " + elevationS
     }
 }

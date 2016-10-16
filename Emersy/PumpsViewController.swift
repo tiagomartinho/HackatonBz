@@ -25,16 +25,16 @@ class PumpsViewController: UIViewController, MKMapViewDelegate {
         if sender.state == .began {
             let touchPoint = sender.location(in: mapView)
             let newCoordinates = mapView.convert(touchPoint, toCoordinateFrom: mapView)
-            addAnnotation(newCoordinates)
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = newCoordinates
+            addAnnotation(annotation)
 //            if annotations.count == 1 {
 //                askHydrantInformation()
 //            }
         }
     }
 
-    func addAnnotation(_ newCoordinates: CLLocationCoordinate2D) {
-        let annotation = MKPointAnnotation()
-        annotation.coordinate = newCoordinates
+    func addAnnotation(_ annotation: MKAnnotation) {
         mapView.addAnnotation(annotation)
         annotations.append(annotation)
     }
@@ -108,8 +108,7 @@ class PumpsViewController: UIViewController, MKMapViewDelegate {
 
     func addPumps(pumps: [Pump]) {
         for pump in pumps {
-            let coordinate = CLLocationCoordinate2D(latitude: pump.lat, longitude: pump.lng)
-            addAnnotation(coordinate)
+            addAnnotation(pump)
         }
     }
 }
