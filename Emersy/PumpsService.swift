@@ -2,7 +2,7 @@ import Alamofire
 import SwiftyJSON
 
 class PumpsService {
-    func send(input: PumpsServiceInput, completionHandler: @escaping (DataResponse<Any>) -> Void) {
+    func send(input: PumpsServiceInput, completionHandler: @escaping ([Pump]?) -> Void) {
         let url = "http://10.171.21.177:8080/pumpLocation"
         let json = JSON(input.serialized())
         print("input JSON: \(json)")
@@ -14,13 +14,11 @@ class PumpsService {
                             case .success(let value):
                                 let json = JSON(value)
                                 let pumps = PumpBuilder.build(from: json)
-                                for pump in pumps {
-                                    print(pump)
-                                }
+                                completionHandler(pumps)
                             case .failure(let error):
                                 print(error)
+                                completionHandler(nil)
                             }
-                            completionHandler(response)
         }
     }
 }
