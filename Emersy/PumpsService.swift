@@ -13,11 +13,41 @@ class PumpsService {
                             switch response.result {
                             case .success(let value):
                                 let json = JSON(value)
-                                print("JSON: \(json)")
+                                let pumps = PumpBuilder.build(from: json)
+                                for pump in pumps {
+                                    print(pump)
+                                }
                             case .failure(let error):
                                 print(error)
                             }
                             completionHandler(response)
         }
+    }
+}
+
+struct Pump {
+    let lng: Double
+    let lat: Double
+    let elevation: Double
+    let pressure: Double
+    let tubesBefore: Int
+
+    init(json: JSON) {
+        lng = json["lng"].doubleValue
+        lat = json["lat"].doubleValue
+        elevation = json["elevation"].doubleValue
+        pressure = json["pressure"].doubleValue
+        tubesBefore = json["tubesBefore"].intValue
+    }
+}
+
+class PumpBuilder {
+    static func build(from json: JSON) -> [Pump] {
+        let list: Array<JSON> = json["pumps"].arrayValue
+        var pumps = [Pump]()
+        for item in list {
+            pumps.append(Pump(json: item))
+        }
+        return pumps
     }
 }
