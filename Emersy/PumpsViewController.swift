@@ -82,7 +82,7 @@ class PumpsViewController: UIViewController, MKMapViewDelegate {
         }
         annotations = [MKAnnotation]()
     }
-    
+
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if annotation is MKUserLocation {
             return nil

@@ -20,7 +20,7 @@ class AlamofireMissionService {
         let parameters: Parameters = [
             "accept": accepted
         ]
-        Alamofire.request("https://httpbin.org/post",
+        Alamofire.request("http://hackathon-emersy.azurewebsites.net/api/v1/mission/6f868381-2a0d-463a-9831-a4a039800090/users/b9a01684-cc3f-48f1-962f-7e477bae9d95",
                           method: .post,
                           parameters: parameters,
                           encoding: JSONEncoding.default).response(completionHandler: completionHandler)
