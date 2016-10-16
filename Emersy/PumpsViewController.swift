@@ -76,6 +76,13 @@ class PumpsViewController: UIViewController, MKMapViewDelegate {
         }
     }
 
+    @IBAction func reset(_ sender: AnyObject) {
+        for annotation in annotations {
+            mapView.removeAnnotation(annotation)
+        }
+        annotations = [MKAnnotation]()
+    }
+    
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if annotation is MKUserLocation {
             return nil

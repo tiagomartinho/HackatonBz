@@ -152,7 +152,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="satellite" showsUserLocation="YES" showsBuildings="NO" showsCompass="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Az8-jt-fIQ">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="satellite" showsUserLocation="YES" showsBuildings="NO" showsCompass="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Az8-jt-fIQ">
+                                <frame key="frameInset" width="1000" height="1000"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="lM6-vY-ek3" appends="YES" id="Hw2-fH-thb"/>
@@ -220,6 +221,38 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kCS-MI-xFN">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zO-iY-CnJ">
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-8" translatesAutoresizingMaskIntoConstraints="NO" id="uFO-X0-vPW">
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w27-07-Kwq">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <state key="normal" title="Reset"/>
+                                                        <connections>
+                                                            <action selector="reset:" destination="WLw-jm-fxS" eventType="touchUpInside" id="Beb-Ss-776"/>
+                                                            <action selector="undo:" destination="WLw-jm-fxS" eventType="touchUpInside" id="1F4-5a-dkf"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="uFO-X0-vPW" firstAttribute="top" secondItem="9zO-iY-CnJ" secondAttribute="top" constant="8" id="04S-Qg-8WG"/>
+                                            <constraint firstItem="uFO-X0-vPW" firstAttribute="leading" secondItem="9zO-iY-CnJ" secondAttribute="leading" constant="8" id="4B9-TV-6Ua"/>
+                                            <constraint firstAttribute="trailing" secondItem="uFO-X0-vPW" secondAttribute="trailing" constant="8" id="Dlz-wv-XBZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="uFO-X0-vPW" secondAttribute="bottom" constant="8" id="mMx-6g-Z0d"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -228,9 +261,13 @@
                             <constraint firstItem="jin-wt-S88" firstAttribute="top" secondItem="Az8-jt-fIQ" secondAttribute="bottom" id="JH7-Qe-Rjr"/>
                             <constraint firstItem="jin-wt-S88" firstAttribute="top" secondItem="T3F-w1-WxJ" secondAttribute="bottom" constant="30" id="QEU-Be-bPx"/>
                             <constraint firstAttribute="trailing" secondItem="Az8-jt-fIQ" secondAttribute="trailing" id="S40-1c-hkZ"/>
+                            <constraint firstItem="9zO-iY-CnJ" firstAttribute="width" secondItem="qje-ty-3Wk" secondAttribute="width" id="WXN-hH-qvq"/>
+                            <constraint firstItem="w27-07-Kwq" firstAttribute="width" secondItem="7mf-i5-3T6" secondAttribute="width" id="aWE-Lp-fja"/>
                             <constraint firstItem="jin-wt-S88" firstAttribute="top" secondItem="ZcL-T6-g7b" secondAttribute="bottom" constant="30" id="ap8-f8-aHS"/>
                             <constraint firstItem="qCJ-cM-yqK" firstAttribute="width" secondItem="7mf-i5-3T6" secondAttribute="width" id="dCe-Fg-8vP"/>
+                            <constraint firstItem="kCS-MI-xFN" firstAttribute="leading" secondItem="teN-QE-5Oa" secondAttribute="leading" constant="20" symbolic="YES" id="hyC-1A-lpA"/>
                             <constraint firstItem="ZcL-T6-g7b" firstAttribute="leading" secondItem="teN-QE-5Oa" secondAttribute="leadingMargin" id="jCQ-Sm-xI0"/>
+                            <constraint firstItem="kCS-MI-xFN" firstAttribute="top" secondItem="teN-QE-5Oa" secondAttribute="top" constant="30" id="nBz-gM-0gX"/>
                             <constraint firstItem="Az8-jt-fIQ" firstAttribute="leading" secondItem="teN-QE-5Oa" secondAttribute="leading" id="qv3-2k-zzW"/>
                         </constraints>
                     </view>
