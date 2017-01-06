@@ -78,6 +78,10 @@ class PumpsViewController: UIViewController, MKMapViewDelegate {
     }
 
     @IBAction func reset(_ sender: AnyObject) {
+        removeAnnotations()
+    }
+
+    func removeAnnotations() {
         for annotation in annotations {
             mapView.removeAnnotation(annotation)
         }
@@ -104,6 +108,11 @@ class PumpsViewController: UIViewController, MKMapViewDelegate {
             annotationView.canShowCallout = true
         }
 
+        if annotation is SourcePump {
+            annotationView.pinTintColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
+            annotationView.canShowCallout = true
+        }
+
         return annotationView
     }
 
@@ -114,6 +123,8 @@ class PumpsViewController: UIViewController, MKMapViewDelegate {
         SVProgressHUD.show()
         PumpsService().send(input: input) { pumps in
             SVProgressHUD.dismiss()
+
+            self.removeAnnotations()
 
             if let pump = pumps.0 {
                 self.addAnnotation(pump)
