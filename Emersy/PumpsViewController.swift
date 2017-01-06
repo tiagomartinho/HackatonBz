@@ -114,7 +114,12 @@ class PumpsViewController: UIViewController, MKMapViewDelegate {
         SVProgressHUD.show()
         PumpsService().send(input: input) { pumps in
             SVProgressHUD.dismiss()
-            if let pumps = pumps {
+
+            if let pump = pumps.0 {
+                self.addAnnotation(pump)
+            }
+
+            if let pumps = pumps.1 {
                 self.addPumps(pumps: pumps)
             }
         }

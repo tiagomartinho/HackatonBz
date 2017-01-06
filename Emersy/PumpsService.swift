@@ -2,7 +2,10 @@ import Alamofire
 import SwiftyJSON
 
 class PumpsService {
-    func send(input: PumpsServiceInput, completionHandler: @escaping ([Pump]?) -> Void) {
+
+    typealias completionHandler = (SourcePump?,[Pump]?) -> Void
+
+    func send(input: PumpsServiceInput, completionHandler: @escaping completionHandler) {
         let url = "http://test-emersy.azurewebsites.net/api/v1/pumpcircuits"
         let json = JSON(input.serialized())
         print("input JSON: \(json)")
@@ -13,11 +16,11 @@ class PumpsService {
                             switch response.result {
                             case .success(let value):
                                 let json = JSON(value)
-                                let pumps = PumpBuilder.build(from: json)
-                                completionHandler(pumps)
+                                let (sourcePump,pumps) = PumpsServiceOutput.build(from: json)
+                                completionHandler(sourcePump, pumps)
                             case .failure(let error):
                                 print(error)
-                                completionHandler(nil)
+                                completionHandler(nil, nil)
                             }
         }
     }
