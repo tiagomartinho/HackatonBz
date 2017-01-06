@@ -1,30 +1,25 @@
 import MapKit
 
 struct PumpsServiceInput {
-    let pa: String
+
+    let outputPressure: String
     let flowRate: String
+    let maxInputPressure: String
     let annotations: [MKAnnotation]
 
     func serialized() -> [String: Any] {
 
         var points = [Any]()
 
-        let first = annotationToPoint(annotations.first!)
-        let last = annotationToPoint(annotations.last!)
-
         for annotation in annotations {
             points.append(annotationToPoint(annotation))
         }
 
-        points.removeFirst()
-        points.removeLast()
-
         let parameters: [String: Any] = [
-            "pa": pa,
-            "flowRate": flowRate,
-            "points" : points,
-            "hydrant" : first,
-            "fire" : last
+            "OutputPressure": outputPressure,
+            "FlowRate": flowRate,
+            "MaxInputPressure": maxInputPressure,
+            "Points" : points
         ]
 
         return parameters
