@@ -3,7 +3,7 @@ import SwiftyJSON
 
 class PumpsService {
 
-    typealias completionHandler = (SourcePump?,[Pump]?) -> Void
+    typealias completionHandler = (SourcePump?,[Pump]?, Distributor?) -> Void
 
     func send(input: PumpsServiceInput, completionHandler: @escaping completionHandler) {
         let url = "http://test-emersy.azurewebsites.net/api/v1/pumpcircuits"
@@ -16,11 +16,11 @@ class PumpsService {
                             switch response.result {
                             case .success(let value):
                                 let json = JSON(value)
-                                let (sourcePump,pumps) = PumpsServiceOutput.build(from: json)
-                                completionHandler(sourcePump, pumps)
+                                let (sourcePump, pumps, distributor) = PumpsServiceOutput.build(from: json)
+                                completionHandler(sourcePump, pumps, distributor)
                             case .failure(let error):
                                 print(error)
-                                completionHandler(nil, nil)
+                                completionHandler(nil, nil, nil)
                             }
         }
     }
