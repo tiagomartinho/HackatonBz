@@ -3,7 +3,7 @@ import SwiftyJSON
 
 class PumpsService {
     func send(input: PumpsServiceInput, completionHandler: @escaping ([Pump]?) -> Void) {
-        let url = "http://10.171.21.177:8080/pumpLocation"
+        let url = "http://test-emersy.azurewebsites.net/api/v1/pumpcircuits"
         let json = JSON(input.serialized())
         print("input JSON: \(json)")
         Alamofire.request(url,
