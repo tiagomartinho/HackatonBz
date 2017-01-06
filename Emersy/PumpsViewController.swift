@@ -5,6 +5,8 @@ import SVProgressHUD
 class PumpsViewController: UIViewController, MKMapViewDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var undoButton: UIView!
+    @IBOutlet weak var calculateButton: UIView!
 
     var annotations = [MKAnnotation]()
 
@@ -79,6 +81,7 @@ class PumpsViewController: UIViewController, MKMapViewDelegate {
 
     @IBAction func reset(_ sender: AnyObject) {
         removeAnnotations()
+        showButtons()
     }
 
     func removeAnnotations() {
@@ -121,7 +124,23 @@ class PumpsViewController: UIViewController, MKMapViewDelegate {
         return annotationView
     }
 
+    func showButtons() {
+        setButtonsHidden(false)
+    }
+
+    func hideButtons() {
+        setButtonsHidden(true)
+    }
+
+    func setButtonsHidden(_ isHidden: Bool) {
+        undoButton.isHidden = isHidden
+        calculateButton.isHidden = isHidden
+    }
+
     @IBAction func calculate(_ sender: UIButton) {
+
+        hideButtons()
+
         let fire = annotations.remove(at: 1)
         annotations.append(fire)
         let input = PumpsServiceInput(outputPressure: outputPressure ?? "8", flowRate: flowRate ?? "800", maxInputPressure: maxInputPressure ?? "1.5", annotations: annotations)

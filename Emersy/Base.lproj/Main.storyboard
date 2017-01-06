@@ -165,7 +165,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="satellite" showsUserLocation="YES" showsBuildings="NO" showsCompass="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Az8-jt-fIQ">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="satellite" showsUserLocation="YES" showsBuildings="NO" showsCompass="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Az8-jt-fIQ">
                                 <rect key="frame" x="0.0" y="618" width="375" height="0.0"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -298,7 +298,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Pumps" image="fire" id="x3G-y9-emu"/>
                     <connections>
+                        <outlet property="calculateButton" destination="T3F-w1-WxJ" id="op2-dr-ZhC"/>
                         <outlet property="mapView" destination="Az8-jt-fIQ" id="jdf-ek-PXJ"/>
+                        <outlet property="undoButton" destination="ZcL-T6-g7b" id="9zq-vo-0eY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eib-X4-eeN" userLabel="First Responder" sceneMemberID="firstResponder"/>
