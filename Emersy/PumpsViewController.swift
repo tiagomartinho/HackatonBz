@@ -113,6 +113,11 @@ class PumpsViewController: UIViewController, MKMapViewDelegate {
             annotationView.canShowCallout = true
         }
 
+        if annotation is Distributor {
+            annotationView.pinTintColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+            annotationView.canShowCallout = true
+        }
+
         return annotationView
     }
 
@@ -126,12 +131,16 @@ class PumpsViewController: UIViewController, MKMapViewDelegate {
 
             self.removeAnnotations()
 
-            if let pump = pumps.0 {
-                self.addAnnotation(pump)
+            if let sorucePump = pumps.0 {
+                self.addAnnotation(sorucePump)
             }
 
             if let pumps = pumps.1 {
                 self.addPumps(pumps: pumps)
+            }
+
+            if let distributor = pumps.2 {
+                self.addAnnotation(distributor)
             }
         }
     }

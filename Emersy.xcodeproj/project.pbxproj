@@ -15,6 +15,7 @@
 		24B81C401E20106F00965A03 /* SourcePump.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B81C3F1E20106F00965A03 /* SourcePump.swift */; };
 		24B81C451E20132D00965A03 /* SourcePump+MKAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B81C441E20132D00965A03 /* SourcePump+MKAnnotation.swift */; };
 		24B81C471E20150100965A03 /* Distributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B81C461E20150100965A03 /* Distributor.swift */; };
+		24B81C491E2015C800965A03 /* Distributor+MKAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B81C481E2015C800965A03 /* Distributor+MKAnnotation.swift */; };
 		EA2C36521DB2A46C001B03D5 /* ViewController+CLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2C36511DB2A46C001B03D5 /* ViewController+CLLocationManagerDelegate.swift */; };
 		EA2C36541DB2B1AE001B03D5 /* PumpsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2C36531DB2B1AE001B03D5 /* PumpsService.swift */; };
 		EA2C36571DB2B71A001B03D5 /* pumpFinalTrack.json in Resources */ = {isa = PBXBuildFile; fileRef = EA2C36551DB2B71A001B03D5 /* pumpFinalTrack.json */; };
@@ -115,6 +116,7 @@
 		24B81C3F1E20106F00965A03 /* SourcePump.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourcePump.swift; sourceTree = "<group>"; };
 		24B81C441E20132D00965A03 /* SourcePump+MKAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SourcePump+MKAnnotation.swift"; sourceTree = "<group>"; };
 		24B81C461E20150100965A03 /* Distributor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Distributor.swift; sourceTree = "<group>"; };
+		24B81C481E2015C800965A03 /* Distributor+MKAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Distributor+MKAnnotation.swift"; sourceTree = "<group>"; };
 		4FD39EEB59A8FDC4213BE666 /* Pods-Emersy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emersy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Emersy/Pods-Emersy.debug.xcconfig"; sourceTree = "<group>"; };
 		6200F65B35986465AC489AC5 /* Pods_Emersy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emersy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7083C3E0C85C60C746DFC7B /* Pods-Emersy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emersy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Emersy/Pods-Emersy.release.xcconfig"; sourceTree = "<group>"; };
@@ -226,6 +228,15 @@
 			name = SourcePump;
 			sourceTree = "<group>";
 		};
+		24B81C4A1E2015CC00965A03 /* Distributor */ = {
+			isa = PBXGroup;
+			children = (
+				24B81C461E20150100965A03 /* Distributor.swift */,
+				24B81C481E2015C800965A03 /* Distributor+MKAnnotation.swift */,
+			);
+			name = Distributor;
+			sourceTree = "<group>";
+		};
 		9ED8BEDD265AC5134A31E743 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,8 +304,8 @@
 				24B81C411E2012E500965A03 /* Service */,
 				24B81C431E20131000965A03 /* SourcePump */,
 				24B81C421E20130C00965A03 /* Pump */,
+				24B81C4A1E2015CC00965A03 /* Distributor */,
 				EA47A1C81DB26A8500F1D89D /* Supporting Files */,
-				24B81C461E20150100965A03 /* Distributor.swift */,
 			);
 			path = Emersy;
 			sourceTree = "<group>";
@@ -663,6 +674,7 @@
 				EA47A1C31DB2678800F1D89D /* MissionNotificationCategories.swift in Sources */,
 				EA47A1C71DB269B600F1D89D /* DeviceTokenData.swift in Sources */,
 				24B81C3B1E200DFE00965A03 /* DoubleExtension.swift in Sources */,
+				24B81C491E2015C800965A03 /* Distributor+MKAnnotation.swift in Sources */,
 				24B81C451E20132D00965A03 /* SourcePump+MKAnnotation.swift in Sources */,
 				EA6759781DB235ED008F9963 /* AppDelegate.swift in Sources */,
 				EAF53A2C1DB26F32003CCC4C /* NotificationHandlerBuilder.swift in Sources */,
