@@ -12,7 +12,8 @@ class PumpsViewController: UIViewController, MKMapViewDelegate {
     var location: CLLocation?
     var mapZoomSet = false
 
-    var pa: String? = "8"
+    var maxInputPressure: String? = "1.5"
+    var outputPressure: String? = "8"
     var flowRate: String? = "800"
 
     override func viewDidLoad() {
@@ -45,17 +46,17 @@ class PumpsViewController: UIViewController, MKMapViewDelegate {
             self.undo()
         }))
         alert.addAction(UIAlertAction(title: "Save", style: .default, handler: { (action) in
-            let pa = alert.textFields?.first?.text ?? ""
+            let outputPressure = alert.textFields?.first?.text ?? ""
             let flowRate = alert.textFields?.last?.text ?? ""
-            if pa.isEmpty || flowRate.isEmpty {
+            if outputPressure.isEmpty || flowRate.isEmpty {
                 self.askHydrantInformation()
             } else {
-                self.pa = pa
+                self.outputPressure = outputPressure
                 self.flowRate = flowRate
             }
         }))
         alert.addTextField { (textField) in
-            textField.placeholder = "Pa"
+            textField.placeholder = "Output Pressure"
             textField.keyboardType = .numbersAndPunctuation
         }
         alert.addTextField { (textField) in
@@ -109,7 +110,7 @@ class PumpsViewController: UIViewController, MKMapViewDelegate {
     @IBAction func calculate(_ sender: UIButton) {
         let fire = annotations.remove(at: 1)
         annotations.append(fire)
-        let input = PumpsServiceInput(pa: pa ?? "", flowRate: flowRate ?? "", annotations: annotations)
+        let input = PumpsServiceInput(outputPressure: outputPressure ?? "8", flowRate: flowRate ?? "800", maxInputPressure: maxInputPressure ?? "1.5", annotations: annotations)
         SVProgressHUD.show()
         PumpsService().send(input: input) { pumps in
             SVProgressHUD.dismiss()
