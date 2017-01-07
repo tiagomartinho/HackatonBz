@@ -1,0 +1,5 @@
+Emersy: Informations for emergency team at your hand.
+
+Emersy is a information management systems for emergency services that supports the rescuers to do there job. 
+
+The Emersy-Pumps App is a module of Emersy that helps fire fighters to calculate the position of the pumps to bring the water from source to the fire in an optimised way.
