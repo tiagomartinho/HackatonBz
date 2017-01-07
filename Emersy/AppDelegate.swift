@@ -9,24 +9,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions
         launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        Notification.requestAndRegister(application: application, delegate: self)
+//        Notification.requestAndRegister(application: application, delegate: self)
         return true
     }
 
-    func application(_ application: UIApplication,
-                     didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        print("deviceToken: \(deviceToken.string())")
-    }
-
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        print("didReceiveRemoteNotification")
-    }
-
-    func userNotificationCenter(_ center: UNUserNotificationCenter,
-                                         didReceive response: UNNotificationResponse,
-                                         withCompletionHandler completionHandler: @escaping () -> Void) {
-        print("userNotificationCenter")
-        let handler = NotificationHandlerBuilder.build(with: response.actionIdentifier)
-        handler.handle(withCompletionHandler: completionHandler)
-    }
+//    func application(_ application: UIApplication,
+//                     didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+//        print("deviceToken: \(deviceToken.string())")
+//    }
+//
+//    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+//        print("didReceiveRemoteNotification")
+//    }
+//
+//    func userNotificationCenter(_ center: UNUserNotificationCenter,
+//                                         didReceive response: UNNotificationResponse,
+//                                         withCompletionHandler completionHandler: @escaping () -> Void) {
+//        print("userNotificationCenter")
+//        let handler = NotificationHandlerBuilder.build(with: response.actionIdentifier)
+//        handler.handle(withCompletionHandler: completionHandler)
+//    }
 }
