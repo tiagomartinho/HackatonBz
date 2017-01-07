@@ -32,15 +32,6 @@
 		EA6759821DB235ED008F9963 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6759801DB235ED008F9963 /* LaunchScreen.storyboard */; };
 		EA67598D1DB235ED008F9963 /* EmersyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA67598C1DB235ED008F9963 /* EmersyTests.swift */; };
 		EA6759981DB235ED008F9963 /* EmersyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6759971DB235ED008F9963 /* EmersyUITests.swift */; };
-		EA67599D1DB235ED008F9963 /* Emersy.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EA67599C1DB235ED008F9963 /* Emersy.app */; };
-		EA6759A31DB235ED008F9963 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6759A11DB235ED008F9963 /* Interface.storyboard */; };
-		EA6759A51DB235ED008F9963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA6759A41DB235ED008F9963 /* Assets.xcassets */; };
-		EA6759AC1DB235ED008F9963 /* Emersy.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EA6759AB1DB235ED008F9963 /* Emersy.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		EA6759B31DB235ED008F9963 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6759B21DB235ED008F9963 /* InterfaceController.swift */; };
-		EA6759B51DB235ED008F9963 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6759B41DB235ED008F9963 /* ExtensionDelegate.swift */; };
-		EA6759B71DB235ED008F9963 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6759B61DB235ED008F9963 /* NotificationController.swift */; };
-		EA6759B91DB235ED008F9963 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6759B81DB235ED008F9963 /* ComplicationController.swift */; };
-		EA6759BB1DB235ED008F9963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA6759BA1DB235ED008F9963 /* Assets.xcassets */; };
 		EAF53A2A1DB26BF2003CCC4C /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF53A291DB26BF2003CCC4C /* NotificationHandler.swift */; };
 		EAF53A2C1DB26F32003CCC4C /* NotificationHandlerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF53A2B1DB26F32003CCC4C /* NotificationHandlerBuilder.swift */; };
 		EAF53A2E1DB26F4D003CCC4C /* RefuseNotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF53A2D1DB26F4D003CCC4C /* RefuseNotificationHandler.swift */; };
@@ -67,41 +58,15 @@
 			remoteGlobalIDString = EA6759731DB235ED008F9963;
 			remoteInfo = Emersy;
 		};
-		EA67599E1DB235ED008F9963 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EA67596C1DB235ED008F9963 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EA67599B1DB235ED008F9963;
-			remoteInfo = "Emersy WatchKit App";
-		};
-		EA6759AD1DB235ED008F9963 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EA67596C1DB235ED008F9963 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EA6759AA1DB235ED008F9963;
-			remoteInfo = "Emersy WatchKit Extension";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		EA6759C21DB235ED008F9963 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				EA6759AC1DB235ED008F9963 /* Emersy.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EA6759C61DB235ED008F9963 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				EA67599D1DB235ED008F9963 /* Emersy.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,11 +107,9 @@
 		EA6759931DB235ED008F9963 /* EmersyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmersyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA6759971DB235ED008F9963 /* EmersyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmersyUITests.swift; sourceTree = "<group>"; };
 		EA6759991DB235ED008F9963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EA67599C1DB235ED008F9963 /* Emersy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emersy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA6759A21DB235ED008F9963 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		EA6759A41DB235ED008F9963 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA6759A61DB235ED008F9963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EA6759AB1DB235ED008F9963 /* Emersy.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Emersy.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA6759B11DB235ED008F9963 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		EA6759B21DB235ED008F9963 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		EA6759B41DB235ED008F9963 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
@@ -184,13 +147,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EA6759901DB235ED008F9963 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EA6759A81DB235ED008F9963 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -288,8 +244,6 @@
 				EA6759741DB235ED008F9963 /* Emersy.app */,
 				EA6759881DB235ED008F9963 /* EmersyTests.xctest */,
 				EA6759931DB235ED008F9963 /* EmersyUITests.xctest */,
-				EA67599C1DB235ED008F9963 /* Emersy.app */,
-				EA6759AB1DB235ED008F9963 /* Emersy.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -407,7 +361,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				EA67599F1DB235ED008F9963 /* PBXTargetDependency */,
 			);
 			name = Emersy;
 			productName = Emersy;
@@ -450,40 +403,6 @@
 			productReference = EA6759931DB235ED008F9963 /* EmersyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		EA67599B1DB235ED008F9963 /* Emersy WatchKit App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EA6759C31DB235ED008F9963 /* Build configuration list for PBXNativeTarget "Emersy WatchKit App" */;
-			buildPhases = (
-				EA67599A1DB235ED008F9963 /* Resources */,
-				EA6759C21DB235ED008F9963 /* Embed App Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EA6759AE1DB235ED008F9963 /* PBXTargetDependency */,
-			);
-			name = "Emersy WatchKit App";
-			productName = "Emersy WatchKit App";
-			productReference = EA67599C1DB235ED008F9963 /* Emersy.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		EA6759AA1DB235ED008F9963 /* Emersy WatchKit Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EA6759BF1DB235ED008F9963 /* Build configuration list for PBXNativeTarget "Emersy WatchKit Extension" */;
-			buildPhases = (
-				EA6759A71DB235ED008F9963 /* Sources */,
-				EA6759A81DB235ED008F9963 /* Frameworks */,
-				EA6759A91DB235ED008F9963 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Emersy WatchKit Extension";
-			productName = "Emersy WatchKit Extension";
-			productReference = EA6759AB1DB235ED008F9963 /* Emersy.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -522,16 +441,6 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = EA6759731DB235ED008F9963;
 					};
-					EA67599B1DB235ED008F9963 = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 4C34FT6ABU;
-						ProvisioningStyle = Automatic;
-					};
-					EA6759AA1DB235ED008F9963 = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 4C34FT6ABU;
-						ProvisioningStyle = Automatic;
-					};
 				};
 			};
 			buildConfigurationList = EA67596F1DB235ED008F9963 /* Build configuration list for PBXProject "Emersy" */;
@@ -550,8 +459,6 @@
 				EA6759731DB235ED008F9963 /* Emersy */,
 				EA6759871DB235ED008F9963 /* EmersyTests */,
 				EA6759921DB235ED008F9963 /* EmersyUITests */,
-				EA67599B1DB235ED008F9963 /* Emersy WatchKit App */,
-				EA6759AA1DB235ED008F9963 /* Emersy WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -581,23 +488,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EA67599A1DB235ED008F9963 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EA6759A51DB235ED008F9963 /* Assets.xcassets in Resources */,
-				EA6759A31DB235ED008F9963 /* Interface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EA6759A91DB235ED008F9963 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EA6759BB1DB235ED008F9963 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,17 +589,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA6759A71DB235ED008F9963 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EA6759B71DB235ED008F9963 /* NotificationController.swift in Sources */,
-				EA6759B91DB235ED008F9963 /* ComplicationController.swift in Sources */,
-				EA6759B51DB235ED008F9963 /* ExtensionDelegate.swift in Sources */,
-				EA6759B31DB235ED008F9963 /* InterfaceController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -722,16 +601,6 @@
 			isa = PBXTargetDependency;
 			target = EA6759731DB235ED008F9963 /* Emersy */;
 			targetProxy = EA6759941DB235ED008F9963 /* PBXContainerItemProxy */;
-		};
-		EA67599F1DB235ED008F9963 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EA67599B1DB235ED008F9963 /* Emersy WatchKit App */;
-			targetProxy = EA67599E1DB235ED008F9963 /* PBXContainerItemProxy */;
-		};
-		EA6759AE1DB235ED008F9963 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EA6759AA1DB235ED008F9963 /* Emersy WatchKit Extension */;
-			targetProxy = EA6759AD1DB235ED008F9963 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -858,76 +727,6 @@
 			};
 			name = Release;
 		};
-		EA6759C01DB235ED008F9963 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = 4C34FT6ABU;
-				INFOPLIST_FILE = "Emersy WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tm.Emersy.watchkitapp.watchkitextension;
-				PRODUCT_NAME = Emersy;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
-			};
-			name = Debug;
-		};
-		EA6759C11DB235ED008F9963 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = 4C34FT6ABU;
-				INFOPLIST_FILE = "Emersy WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tm.Emersy.watchkitapp.watchkitextension;
-				PRODUCT_NAME = Emersy;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
-			};
-			name = Release;
-		};
-		EA6759C41DB235ED008F9963 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4C34FT6ABU;
-				IBSC_MODULE = Emersy_WatchKit_Extension;
-				INFOPLIST_FILE = "Emersy WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tm.Emersy.watchkitapp;
-				PRODUCT_NAME = Emersy;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
-			};
-			name = Debug;
-		};
-		EA6759C51DB235ED008F9963 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4C34FT6ABU;
-				IBSC_MODULE = Emersy_WatchKit_Extension;
-				INFOPLIST_FILE = "Emersy WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tm.Emersy.watchkitapp;
-				PRODUCT_NAME = Emersy;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
-			};
-			name = Release;
-		};
 		EA6759C81DB235ED008F9963 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4FD39EEB59A8FDC4213BE666 /* Pods-Emersy.debug.xcconfig */;
@@ -1024,24 +823,6 @@
 			buildConfigurations = (
 				EA6759BD1DB235ED008F9963 /* Debug */,
 				EA6759BE1DB235ED008F9963 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EA6759BF1DB235ED008F9963 /* Build configuration list for PBXNativeTarget "Emersy WatchKit Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EA6759C01DB235ED008F9963 /* Debug */,
-				EA6759C11DB235ED008F9963 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EA6759C31DB235ED008F9963 /* Build configuration list for PBXNativeTarget "Emersy WatchKit App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EA6759C41DB235ED008F9963 /* Debug */,
-				EA6759C51DB235ED008F9963 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
