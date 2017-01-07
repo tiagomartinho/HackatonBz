@@ -6,7 +6,7 @@ class PumpsService {
     typealias completionHandler = (SourcePump?,[Pump]?, Distributor?) -> Void
 
     func send(input: PumpsServiceInput, completionHandler: @escaping completionHandler) {
-        let url = "http://test-emersy.azurewebsites.net/api/v1/pumpcircuits"
+        let url = "http://www.emersy.com/api/v1/pumpcircuits"
         let json = JSON(input.serialized())
         print("input JSON: \(json)")
         Alamofire.request(url,

@@ -22,8 +22,16 @@
 	<true/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>emersy.com</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+                <true/>
+            </dict>
+        </dict>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Emersy needs your location to show your position on the map</string>
