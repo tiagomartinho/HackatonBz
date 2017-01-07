@@ -7,11 +7,11 @@ extension Pump: MKAnnotation {
         return CLLocationCoordinate2D(latitude: lat, longitude: lng)
     }
 
-    var title: String? { return "Input Pressure: \(inputPressure.format()) bar" }
+    var title: String? { return "In \(inputPressure.format()) bar, Out \(outputPressure.format()) bar, FlowRate \(flowRate)" }
 
     var subtitle: String? {
+        let distanceBeforeS = "Distance before: \(distanceBefore.format()) m"
         let tubesBeforeS = "Tubes before: \(tubesBefore)"
-        let elevationS = "Elevation: \(elevation.format()) m"
-        return tubesBeforeS + ", " + elevationS
+        return distanceBeforeS + ", " + tubesBeforeS
     }
 }
