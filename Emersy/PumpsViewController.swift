@@ -31,9 +31,9 @@ class PumpsViewController: UIViewController, MKMapViewDelegate {
             let annotation = MKPointAnnotation()
             annotation.coordinate = newCoordinates
             addAnnotation(annotation)
-//            if annotations.count == 1 {
-//                askHydrantInformation()
-//            }
+            if annotations.count == 1 {
+                askHydrantInformation()
+            }
         }
     }
 
@@ -48,15 +48,21 @@ class PumpsViewController: UIViewController, MKMapViewDelegate {
             self.undo()
         }))
         alert.addAction(UIAlertAction(title: "Save", style: .default, handler: { (action) in
-            let outputPressure = alert.textFields?.first?.text ?? ""
-            let flowRate = alert.textFields?.last?.text ?? ""
+            let maxInputPressure = alert.textFields?[0].text ?? ""
+            let outputPressure = alert.textFields?[1].text ?? ""
+            let flowRate = alert.textFields?[2].text ?? ""
             if outputPressure.isEmpty || flowRate.isEmpty {
                 self.askHydrantInformation()
             } else {
+                self.maxInputPressure = maxInputPressure
                 self.outputPressure = outputPressure
                 self.flowRate = flowRate
             }
         }))
+        alert.addTextField { (textField) in
+            textField.placeholder = "Maximum Input Pressure"
+            textField.keyboardType = .numbersAndPunctuation
+        }
         alert.addTextField { (textField) in
             textField.placeholder = "Output Pressure"
             textField.keyboardType = .numbersAndPunctuation
