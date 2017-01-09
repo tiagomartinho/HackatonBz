@@ -143,7 +143,15 @@ class PumpsViewController: UIViewController, MKMapViewDelegate {
         calculateButton.isHidden = isHidden
     }
 
+    func showMinimumPointsAlert() {
+        let alert = UIAlertController(title: "Attention", message: "Insert at least two points", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
+
     @IBAction func calculate(_ sender: UIButton) {
+
+        guard annotations.count >= 2 else { showMinimumPointsAlert(); return }
 
         hideButtons()
 
